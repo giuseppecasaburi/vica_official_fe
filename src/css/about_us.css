@@ -1,0 +1,88 @@
+#about-us {
+    margin: 200px auto;
+    width: 90%;
+    min-height: 500px;
+}
+
+#container-about-us {
+    display: flex;
+    width: 100%;
+}
+
+#image-area,
+#content-text-area {
+    width: 50%;
+}
+
+#image-area h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#image-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numero {
+    margin: 10px;
+    font-size: 42px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.anni {
+    color: var(--color-oro);
+}
+
+.cerchio {
+    width: 350px;
+    height: 350px;
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cerchio img {
+    object-fit: cover;
+    height: 100%;
+    align-content: center;
+}
+
+#content-text-area {
+    display: flex;
+    flex-direction: column;
+
+    text-align: end;
+}
+
+#content-text-area h2 {
+    margin-top: 0;
+    font-size: 42px;
+    font-weight: bolder;
+    color: var(--color-oro);
+}
+
+#content-text-area p {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+}
+
+#content-text-area .retta {
+    width: 25%;
+    height: 1px;
+    background-color: var(--color-oro);
+    position: static;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#bottone {
+    margin-top: auto;
+}
+
+#bottone a {
+    margin: 0;
+}

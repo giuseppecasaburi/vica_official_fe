@@ -1,0 +1,38 @@
+@import './navigation_bar.css';
+
+header,
+#overlay {
+    height: 500px;
+    /* width: 100vw; */
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+header {
+    background-image: url("../../public/test.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay {
+    background-color: #0404048c;
+}
+
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-area {
+    margin-top: auto;
+    color: var(--color-oro);
+}
+
+.button-area {
+    margin-top: auto;
+    margin-bottom: 50px;
+}

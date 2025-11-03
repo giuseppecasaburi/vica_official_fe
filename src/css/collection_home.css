@@ -1,0 +1,111 @@
+.collection-home {
+    margin: 200px auto;
+    width: 90vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#img1 {
+    width: 80%;
+    height: 100%;
+    margin-right: auto;
+    display: block;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+#img2 {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    right: 0%;
+    top: 20%;
+    will-change: transform;
+    /* hint di performance */
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#img3 {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    display: block;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+#img4 {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 0%;
+    top: 20%;
+    will-change: transform;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+#img2 img {
+    width: 100%;
+    height: 120%;
+}
+
+#img3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#img4 img {
+    width: 100%;
+    height: 120%;
+}
+
+.text-collection1 {
+    width: 40%;
+    margin-left: auto;
+}
+
+.text-collection2 {
+    width: 40%;
+    margin-right: auto;
+}
+
+.collection-home .button-link {
+    margin: 0px 0px;
+}
+
+.text-collection1 h2,
+.text-collection2 h2 {
+    font-size: 32px;
+}
+
+.text-collection1 p,
+.text-collection2 p {
+    color: var(--color-oro);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* VALUTARE LA RIMOZIONE */
+.retta {
+    width: 85%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: -5%;
+}
