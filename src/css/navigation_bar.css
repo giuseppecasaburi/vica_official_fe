@@ -1,19 +1,21 @@
-nav {
-    width: 80vw;
-    height: 60px;
-    margin: 0 auto;
-    padding: 5px 0;
-    border-radius: 50px;
+.menu {
     position: fixed;
     top: 30px;
-    right: 50px;
     left: 50px;
+    right: 50px;
+    width: 80vw;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
     background-color: var(--color-btn-banner);
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 10%;
     z-index: 1005;
+    animation: slideFromTop 1.5s ease-in-out forwards;
+    box-sizing: border-box;
 }
 
 .link-header {
@@ -22,8 +24,7 @@ nav {
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     display: inline-block;
-    padding: 5px;
-    color: var(--color-oro);
+    color: var(--color-nero-scritte);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -49,4 +50,122 @@ nav {
 
 .link-header:hover {
     transform: scale(1.05);
+    color: var(--color-oro);
+}
+
+
+/* DIMENSIONE DA TABLET IN GIU */
+.menu-responsive {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--color-btn-banner);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1005;
+    animation: slideFromTop 2s ease-in-out forwards;
+    box-sizing: border-box;
+    transition: border-radius 0.2s ease-in-out;
+}
+
+.menu-responsive-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-responsive.menu-open {
+    border-radius: 25px 25px 25px 25px;
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 24px;
+    color: var(--color-nero-scritte);
+    transition: transform 0.3s ease;
+}
+
+.side-menu {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        gap 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.side-menu.open {
+    max-height: 300px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.side-menu .link-header {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.side-menu.open .link-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.side-menu.open .link-header:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.side-menu.open .link-header:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.side-menu.open .link-header:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.side-menu.open .link-header:nth-child(4) {
+    transition-delay: 0.25s;
+}
+
+.menu-overlay {
+    display: none;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .menu {
+        gap: 5%;
+    }
+
+    .link-header {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .menu {
+        gap: 3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-responsive {
+        left: 15px;
+        right: 15px;
+        width: calc(100vw - 30px);
+    }
 }

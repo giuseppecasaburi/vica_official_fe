@@ -1,21 +1,27 @@
+import BoxNumber from "./BoxNumber";
 import NavigationBar from "./navigationBar";
 
 function Header() {
     return (
         <>
             <header>
-                <div id="overlay">
-                    <NavigationBar />
-                    <section id="hero-section">
-                        <div className="text-area">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique laborum itaque aut facere asperiores.</p>
-                        </div>
-                        <div className="button-area">
-                            <a href="" className="button-link">Link</a>
-                            <a href="" className="button-link">Link</a>
-                        </div>
-                    </section>
+                <div className="header">
+                    <div id="overlay">
+                        <NavigationBar />
+                        <section id="hero-section">
+                            <div className="hero-container">
+                                <div className="text-area">
+                                    <h2 className="animate-title">Da oltre 50 anni progettiamo bagni che durano nel tempo, come le storie di chi li vive.</h2>
+                                </div>
+                                <div className="button-area animate-text">
+                                    <a href="" className="button-link">Cataloghi</a>
+                                    <a href="" className="button-link">Contattaci</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
+                <BoxNumber />
             </header>
         </>
     )

@@ -1,26 +1,24 @@
+import Counter from "./Counter";
+
 function BoxNumber() {
     return (
         <>
-        <section id="box-area">
+        <div id="box-area">
             <div id="conteiner-box-area">
                 <div className="single-box-area">
-                    <p>Lorem</p>
-                    <span>lorem Ipsum</span>
+                    <Counter target={50}/>
+                    <span>Anni nel settore</span>
                 </div>
                 <div className="single-box-area">
-                    <p>Lorem</p>
-                    <span>lorem Ipsum</span>
+                    <Counter target={100}/>
+                    <span>Articoli selezionati</span>
                 </div>
                 <div className="single-box-area">
-                    <p>Lorem</p>
-                    <span>lorem Ipsum</span>
-                </div>
-                <div className="single-box-area">
-                    <p>Lorem</p>
-                    <span>lorem Ipsum</span>
+                    <Counter target={100} simbol="%"/>
+                    <span>Made in Italy</span>
                 </div>
             </div>
-        </section>
+        </div>
         </>
     )
 }

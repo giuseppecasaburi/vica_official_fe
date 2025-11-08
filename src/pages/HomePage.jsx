@@ -1,5 +1,4 @@
 import AboutUs from "../components/AboutUs";
-import BoxNumber from "../components/BoxNumber";
 import CollectionHome from "../components/CollectionHome";
 import CtaFinal from "../components/CtaFinal";
 import WhatTheySay from "../components/WhatTheySay";
@@ -10,7 +9,6 @@ function HomePage() {
     return (
         <>
         <section>
-            <BoxNumber/>
             <CollectionHome/>
             <AboutUs/>
             <WhatTheySay/>

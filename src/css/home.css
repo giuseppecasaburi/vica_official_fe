@@ -1,6 +1,31 @@
-@import './box_number.css';
+@import './text_typing.css';
 @import './collection_home.css';
 @import './about_us.css';
 @import './what_they_say.css';
 @import './cta_final.css';
 @import './footer.css';
+
+/* ---- Animazioni ---- */
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

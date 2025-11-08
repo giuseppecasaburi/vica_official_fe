@@ -55,6 +55,7 @@ footer {
 .cerchio svg {
     width: 100%;
     height: 40%;
+    transition: 0.3s ease-in-out;
 }
 
 #credit {
@@ -67,4 +68,12 @@ footer {
 #credit a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.cerchio svg:hover {
+    transform: scale(1.15);
+    transition: 0.2s ease-in-out;
+    color: var(--color-oro);
+    cursor: pointer;
 }

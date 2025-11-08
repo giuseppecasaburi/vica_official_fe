@@ -1,3 +1,5 @@
+import TextTyping from "./TextTyping";
+
 function CtaFinal() {
     return (
         <>
@@ -6,9 +8,12 @@ function CtaFinal() {
                     <div className="container-img">
                         <img src="./logo.png" alt="" id="logo-official" />
                     </div>
-                    <div className="">
+
+                    {/* VERSIONE FIGMA PRIMA DEL TYPING */}
+                    {/* <div className="">
                         <h2>Costruisci il bagno <br /> <span>dei tuoi sogni.</span></h2>
-                    </div>
+                    </div> */}
+                    <TextTyping />
                 </div>
                 <div id="cta-area">
                     <img src="./test.webp" alt="" />

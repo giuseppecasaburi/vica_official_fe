@@ -5,7 +5,12 @@ function AboutUs() {
                 <div id="container-about-us">
                     <div id="image-area">
                         <h2>Da Oltre</h2>
-                        <span className="numero">50 <span className="anni">Anni</span></span>
+
+                        {/* VERSIONE FIGMA */}
+                        {/* <span className="numero">50 <span className="anni">Anni</span></span> */}
+                        
+                        {/* PRIMA VARIANTE, ATTIVARE SOLO IL SEGUENTE SPAN */}
+                        <span className="numero pulse">50 Anni</span>
                         <div className="cerchio">
                             <img src="./test.webp" alt="" />
                         </div>

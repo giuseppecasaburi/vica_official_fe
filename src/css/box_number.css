@@ -1,7 +1,7 @@
 #box-area {
-    margin: 100px auto;
+    margin: 50px auto 0;
     width: 80vw;
-    height: 150px;
+    height: 130px;
     border-radius: 50px;
     background-color: var(--color-btn-banner);
 }
@@ -14,7 +14,7 @@
 }
 
 .single-box-area {
-    width: calc((100% - 30px) / 4);
+    width: calc((100% - 30px) / 3);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,18 @@
     align-items: center;
 }
 
+.single-box-area p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .single-box-area span {
+    font-size: 28px;
     color: var(--color-oro);
+}
+
+@media screen and (min-width: 1500px) {
+    #box-area {
+        margin: 100px auto 0;
+    }
 }
