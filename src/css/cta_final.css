@@ -27,14 +27,20 @@
     height: 100%;
 }
 
-#logo-area div h2 {
+#logo-area .text-part-1 {
+    display: block;
+    color: var(--color-nero-scritte);
     font-size: 42px;
     font-weight: bolder;
     margin: 0;
 }
 
-#logo-area div h2 span {
+#logo-area .text-part-2 {
     color: var(--color-oro);
+}
+
+#logo-area .cursor {
+    background-color: var(--color-nero-scritte);
 }
 
 .rettangolo {

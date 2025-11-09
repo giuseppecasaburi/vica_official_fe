@@ -7,12 +7,12 @@ header {
 
 .header,
 #overlay {
-    height: 550px;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
 
 .header {
+    height: 70%;
     position: relative;
     background-image: url("../../public/test.webp");
     background-position: center;
@@ -21,6 +21,7 @@ header {
 }
 
 #overlay {
+    height: 100%;
     background-color: #0404048c;
 }
 
@@ -67,10 +68,17 @@ header {
     animation-delay: 0.3s;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
 
     .header,
     #overlay {
         height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: 70%;
     }
 }

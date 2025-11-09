@@ -7,7 +7,7 @@ function Layout() {
         <>
         <Header/>
         <HomePage/>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     )
 }
