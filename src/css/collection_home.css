@@ -1,6 +1,6 @@
 .collection-home {
     margin: 200px auto;
-    width: 90vw;
+    width: 80vw;
     height: 600px;
     display: flex;
     align-items: center;
@@ -114,12 +114,12 @@
 
     .text-collection1 h2,
     .text-collection2 h2 {
-        font-size: 38px;
+        font-size: 52px;
     }
 
     .text-collection1 p,
     .text-collection2 p {
-        font-size: 26px;
+        font-size: 32px;
     }
 
     #img1 {

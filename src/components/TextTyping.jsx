@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 function TextTyping() {
     const text = "Costruisci il bagno";
-    const text2 = " dei tuoi sogni";
+    const text2 = " dei tuoi sogni.";
     const fullText = text + text2;
 
     const [displayText, setDisplayText] = useState("");

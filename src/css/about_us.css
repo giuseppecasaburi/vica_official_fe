@@ -1,12 +1,13 @@
 #about-us {
     margin: 200px auto;
-    width: 90%;
+    width: 80%;
     min-height: 500px;
 }
 
 #container-about-us {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 #image-area,
@@ -120,7 +121,34 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1600px) {
+    #about-us {
+        margin: 300px auto;
+    }
+
+    #image-area h2 {
+        font-size: 42px;
+    }
+
+    .numero {
+        font-size: 52px;
+    }
+
+    .cerchio {
+        width: 450px;
+        height: 450px;
+    }
+
+    #content-text-area h2 {
+        font-size: 52px;
+    }
+
+    #content-text-area p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 980px) {
     #container-about-us {
         flex-direction: column;
     }
@@ -132,7 +160,7 @@
 
     #content-text-area {
         text-align: start;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     #content-text-area .retta {
