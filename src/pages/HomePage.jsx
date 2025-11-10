@@ -11,8 +11,8 @@ function HomePage() {
         <section>
             <CollectionHome/>
             <AboutUs/>
-            <WhatTheySay/>
-            <CtaFinal />
+            {/* <WhatTheySay/>
+            <CtaFinal /> */}
         </section>
         </>
     )

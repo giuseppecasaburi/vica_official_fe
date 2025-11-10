@@ -67,9 +67,14 @@ function TextTyping() {
         <div className="md:flex md:items-center md:justify-center font-mono">
             <div className="typing-container">
                 <p id="typing-text">
-                    <span className="text-part-1">{firstPart}</span>
-                    <span className="text-part-2">{secondPart}</span>
-                    <span className="cursor">&nbsp;</span>
+                    <span className="text-part-1">
+                        {firstPart}
+                        {displayText.length <= text.length && <span className="cursor">&nbsp;</span>}
+                    </span>
+                    <span className="text-part-2">
+                        {secondPart}
+                        {displayText.length > text.length && <span className="cursor">&nbsp;</span>}
+                    </span>
                 </p>
             </div>
         </div>

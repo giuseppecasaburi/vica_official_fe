@@ -40,6 +40,15 @@
 @media screen and (min-width: 1500px) {
     #box-area {
         margin: 100px auto 0;
+        height: calc(30% - 100px);
+    }
+
+    .single-box-area p {
+        font-size: 42px;
+    }
+
+    .single-box-area span {
+        font-size: 38px;
     }
 }
 
@@ -84,6 +93,13 @@
     }
 }
 
+@media screen and (min-width: 1600px) {
+    #box-area {
+        margin: 50px auto 0;
+        height: calc(30% - 100px);
+    }
+}
+
 @media screen and (max-width: 480px) {
     #box-area {
         width: calc(100vw - 30px);
@@ -97,5 +113,12 @@
 
     .single-box-area span {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #box-area {
+        margin: 30px auto 0;
+        height: calc(20% - 50px);
     }
 }
