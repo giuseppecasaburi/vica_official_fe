@@ -166,6 +166,10 @@
     #content-text-area .retta {
         margin-left: 0;
     }
+
+    #content-text-area p {
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width: 425px) {

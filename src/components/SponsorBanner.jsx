@@ -12,7 +12,7 @@ function SponsorBanner() {
             setTimeout(() => {
                 setIsAnimating(true);
             }, 50);
-        }, 1000);
+        }, 30000);
 
         return () => clearTimeout(showTimer);
     }, []);
@@ -22,7 +22,7 @@ function SponsorBanner() {
             // Si nasconde dopo 20 secondi
             const hideTimer = setTimeout(() => {
                 handleClose();
-            }, 20000);
+            }, 10000);
 
             return () => clearTimeout(hideTimer);
         }

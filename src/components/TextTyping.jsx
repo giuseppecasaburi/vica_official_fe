@@ -1,18 +1,25 @@
 import { useState, useEffect, useRef } from 'react';
 
 function TextTyping() {
-    const text = "Costruisci il bagno";
-    const text2 = " dei tuoi sogni.";
-    const fullText = text + text2;
+    // Array di frasi da mostrare in loop
+    const phrases = [
+        { text: "Costruisci il bagno", text2: " dei tuoi sogni." },
+        { text: "Rinnova il tuo bagno", text2: " con stile." },
+        { text: "Trasforma il tuo bagno", text2: " in un'oasi di relax." },
+        { text: "Lasciati ispirare da", text2: " veri esperti del settore." },
+        { text: "Affidati a", text2: " Vica Arredo Bagno." }
+    ];
 
     const [displayText, setDisplayText] = useState("");
+    const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
     const currentCharIndexRef = useRef(0);
-
-    // +1 = typing, -1 = deleting
-    const directionRef = useRef(1);
+    const directionRef = useRef(1); // +1 = typing, -1 = deleting
     const timeoutRef = useRef(null);
 
     useEffect(() => {
+        const currentPhrase = phrases[currentPhraseIndex];
+        const fullText = currentPhrase.text + currentPhrase.text2;
+
         const typeWriter = () => {
             const idx = currentCharIndexRef.current;
             const dir = directionRef.current;
@@ -20,46 +27,43 @@ function TextTyping() {
             // Fase di scrittura
             if (dir === 1) {
                 if (idx < fullText.length) {
-                    // Aggiungo un carattere
                     setDisplayText(fullText.slice(0, idx + 1));
                     currentCharIndexRef.current++;
-                    // Next timeout per continuare a scrivere
                     timeoutRef.current = setTimeout(typeWriter, 50 + Math.random() * 50);
                 } else {
-
-                    // Ho finito di scrivere: scrivo ho finito e ora attendo 3s prima di cancellare
+                    // Ho finito di scrivere: attendo 3s prima di cancellare
                     directionRef.current = -1;
                     timeoutRef.current = setTimeout(typeWriter, 3000);
                 }
-
-                // Fase di cancellazione
-            } else {
+            }
+            // Fase di cancellazione
+            else {
                 if (idx > 0) {
-                    // Rimuovo un carattere
                     setDisplayText(fullText.slice(0, idx - 1));
                     currentCharIndexRef.current--;
-                    // Next timeout per continuare a cancellare
                     timeoutRef.current = setTimeout(typeWriter, 50 + Math.random() * 50);
                 } else {
-                    // Ho finito di cancellare: cambio direzione e attendo 0.5s prima di riscrivere
+                    // Ho finito di cancellare: passo alla frase successiva
                     directionRef.current = 1;
+                    setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
                     timeoutRef.current = setTimeout(typeWriter, 500);
                 }
             }
         };
 
-        // Avvio la macchina “typeWriter”
         typeWriter();
 
-        // Al disassemblaggio, cancello l'eventuale timeout pendente
         return () => {
             if (timeoutRef.current) {
                 clearTimeout(timeoutRef.current);
             }
         };
-    }, []); // eseguo solo al montaggio
+    }, [currentPhraseIndex]); // Si riavvia quando cambia la frase
 
-    // Separo il testo visualizzato in due parti
+    // Calcolo quale frase stiamo mostrando per separare le due parti colorate
+    const currentPhrase = phrases[currentPhraseIndex];
+    const text = currentPhrase.text;
+
     const firstPart = displayText.slice(0, Math.min(displayText.length, text.length));
     const secondPart = displayText.slice(text.length);
 

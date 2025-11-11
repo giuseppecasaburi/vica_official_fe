@@ -1,0 +1,15 @@
+#company-presentation {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#container-presentation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#image-presentation {
+    height: 50%;
+    margin: auto 0;
+}

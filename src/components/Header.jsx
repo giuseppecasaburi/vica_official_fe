@@ -1,7 +1,13 @@
+import { useLocation } from "react-router-dom";
 import BoxNumber from "./BoxNumber";
 import NavigationBar from "./navigationBar";
 
 function Header() {
+    const location = useLocation();
+
+    const hideHeader = location.pathname === "/";
+    
+
     return (
         <>
             <header>
@@ -21,7 +27,7 @@ function Header() {
                         </section>
                     </div>
                 </div>
-                <BoxNumber />
+                { hideHeader ? <BoxNumber /> : "" }
             </header>
         </>
     )
