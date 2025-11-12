@@ -1,33 +1,18 @@
 import { useLocation } from "react-router-dom";
 import BoxNumber from "./BoxNumber";
-import NavigationBar from "./navigationBar";
+import HeroSection from "./HeroSection";
 
 function Header() {
     const location = useLocation();
-
     const hideHeader = location.pathname === "/";
-    
 
     return (
         <>
-            <header>
-                <div className="header">
-                    <div id="overlay">
-                        <NavigationBar />
-                        <section id="hero-section">
-                            <div className="hero-container">
-                                <div className="text-area">
-                                    <h2 className="animate-title">Da oltre 50 anni progettiamo bagni che durano nel tempo, come le storie di chi li vive.</h2>
-                                </div>
-                                <div className="button-area animate-text">
-                                    <a href="" className="button-link">Cataloghi</a>
-                                    <a href="" className="button-link">Contattaci</a>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+            <header style={hideHeader ? {} : {height:"85vh"}}>
+                <div className="header" style={hideHeader ? {} : {height:"80%"}}>
+                    <HeroSection />
                 </div>
-                { hideHeader ? <BoxNumber /> : "" }
+                {hideHeader ? <BoxNumber /> : ""}
             </header>
         </>
     )

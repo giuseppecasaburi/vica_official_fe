@@ -1,6 +1,7 @@
 import AboutUs from "../components/AboutUs";
 import CollectionHome from "../components/CollectionHome";
 import CtaFinal from "../components/CtaFinal";
+import Header from "../components/Header";
 import WhatTheySay from "../components/WhatTheySay";
 
 function HomePage() {
@@ -9,6 +10,7 @@ function HomePage() {
     return (
         <>
         <section>
+            <Header />
             <CollectionHome/>
             <AboutUs/>
             <WhatTheySay/>

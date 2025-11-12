@@ -4,11 +4,13 @@ function Presentation() {
             <section id="company-presentation">
                 <div id="container-presentation">
                     <div id="image-presentation">
+                        {/* <div className="retta"></div>
+                        <div className="retta"></div> */}
                         <img src="./family.jpg" alt="" />
                     </div>
                     <div id="content-text-area">
                         <div id="titolo">
-                            <h2>La Nostra Storia</h2>
+                            <h2>La nostra storia ha radici molto profonde</h2>
                         </div>
                         <div id="testo">
                             <div className="retta"></div>

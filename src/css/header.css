@@ -1,11 +1,12 @@
-@import './navigation_bar.css';
 @import './box_number.css';
+@import './hero_slider.css';
 
 header {
     height: 100vh;
 }
 
 .header,
+#hero-img,
 #overlay {
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -14,15 +15,21 @@ header {
 .header {
     height: 70%;
     position: relative;
-    background-image: url("../../public/test.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
 }
 
 #overlay {
     height: 100%;
     background-color: #0404048c;
+}
+
+#hero-img {
+    height: 100%;
+    position: relative;
+    background-image: url("../../public/test.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #hero-section {

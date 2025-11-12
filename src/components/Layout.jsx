@@ -1,14 +1,14 @@
 import Footer from "./Footer";
-import Header from "./Header";
 import SponsorBanner from "./SponsorBanner";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { Outlet } from "react-router-dom";
+import NavigationBar from "./navigationBar";
 
 function Layout() {
     return (
         <>
-            <Header />
-            <Outlet/>
+            <NavigationBar />
+            <Outlet />
             <SponsorBanner />
             <ScrollToTopButton />
             <Footer />

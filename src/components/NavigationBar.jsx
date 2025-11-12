@@ -2,6 +2,7 @@ import { useState } from "react";
 import IsMobile from "./IsMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function NavigationBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,11 +19,11 @@ function NavigationBar() {
             <nav>
 
                 <div className={`menu ${isMobile ? 'd-none' : ''}`}>
-                    <a href="" className="link-header nav-links">Catalogo</a>
-                    <a href="" className="link-header nav-links">Accessori</a>
+                    <Link to={"/"} className="link-header nav-links">Catalogo</Link>
+                    <Link to={"/"} className="link-header nav-links">Accessori</Link>
                     <img src="./logo.png" alt="" id="logo-official" />
-                    <a href="" className="link-header nav-links">Azienda</a>
-                    <a href="" className="link-header nav-links">Contatti</a>
+                    <Link to={"/company"} className="link-header nav-links">Azienda</Link>
+                    <Link to={"/"} className="link-header nav-links">Contatti</Link>
                 </div>
 
                 {/* RESPONSIVE */}
