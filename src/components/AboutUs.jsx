@@ -8,7 +8,7 @@ function AboutUs() {
 
                         {/* VERSIONE FIGMA */}
                         {/* <span className="numero">50 <span className="anni">Anni</span></span> */}
-                        
+
                         {/* PRIMA VARIANTE, ATTIVARE SOLO IL SEGUENTE SPAN */}
                         <span className="numero pulse">50 Anni</span>
                         <div className="cerchio">
@@ -23,9 +23,13 @@ function AboutUs() {
                         </div>
                         <div id="testo">
                             <div className="retta"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!</p>
+                            <p>Da oltre cinquant’anni l’azienda interpreta l’arredo bagno con un’eleganza essenziale e senza tempo.
+                                La continua ricerca della qualità guida ogni scelta, dai materiali alle finiture.
+                                Un percorso fatto di stile, esperienza e una visione premium del vivere quotidiano.</p>
                             <div className="retta"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!</p>
+                            <p>Materiali selezionati e design contemporaneo si uniscono per creare prodotti destinati a durare.
+                                Linee pulite e proporzioni equilibrate definiscono un’estetica raffinata e versatile.
+                                Ogni proposta nasce per trasformare lo spazio in un ambiente armonioso e distintivo.</p>
                             <div className="retta"></div>
                         </div>
                         <div id="bottone">

@@ -23,7 +23,7 @@ function NavigationBar() {
                     <Link to={"/"} className="link-header nav-links">Accessori</Link>
                     <img src="./logo.png" alt="" id="logo-official" />
                     <Link to={"/company"} className="link-header nav-links">Azienda</Link>
-                    <Link to={"/"} className="link-header nav-links">Contatti</Link>
+                    <Link to={"/contacts"} className="link-header nav-links">Contatti</Link>
                 </div>
 
                 {/* RESPONSIVE */}

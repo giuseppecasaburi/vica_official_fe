@@ -9,27 +9,27 @@ function WhatTheySay() {
                             <div className="cerchio-wts">
                                 <img src="./test.webp" alt="" />
                             </div>
-                            <h3>Lorem <br />Ipsum</h3>
+                            <h3>Martina R.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tempore. Dolores distinctio laudantium inventore necessitatibus voluptatum totam molestias laboriosam.</p>
+                        <p>Ho acquistato alcuni complementi per il bagno e sono rimasta colpita dalla qualità dei materiali. Le finiture sono davvero curate e si vede che c’è attenzione anche nei piccoli dettagli.</p>
                     </div>
                     <div className="recensione">
                         <div className="header-rec">
                             <div className="cerchio-wts">
                                 <img src="./test.webp" alt="" />
                             </div>
-                            <h3>Lorem<br />Ipsum</h3>
+                            <h3>Lorenzo P.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tempore. Dolores distinctio laudantium inventore necessitatibus voluptatum totam molestias laboriosam.</p>
+                        <p>Servizio impeccabile e prodotti solidi. Il mobile che ho scelto è arrivato perfettamente imballato e rispecchia esattamente ciò che avevo visto in catalogo. Molto soddisfatto.</p>
                     </div>
                     <div className="recensione">
                         <div className="header-rec">
                             <div className="cerchio-wts">
                                 <img src="./test.webp" alt="" />
                             </div>
-                            <h3>Lorem<br />Ipsum</h3>
+                            <h3>Elisa M.</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tempore. Dolores distinctio laudantium inventore necessitatibus voluptatum totam molestias laboriosam.</p>
+                        <p>Design moderno e linee pulite, proprio quello che cercavo per rinnovare il mio bagno. Anche l’assistenza pre-acquisto è stata gentile e chiara nel consigliarmi la soluzione giusta.</p>
                     </div>
                 </div>
             </section>

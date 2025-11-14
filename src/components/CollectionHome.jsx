@@ -50,16 +50,16 @@ function CollectionHome() {
                 </div>
 
                 <div className="text-collection1">
-                    <p>Lorem Ipsum</p>
-                    <h2>Lorem ipsum dolor sit amet consectetur</h2>
-                    <a href="" className="button-link">Scopri di più</a>
+                    <p>Design e ispirazione.</p>
+                    <h2>Collezioni di Arredo Bagno</h2>
+                    <a href="" className="button-link">Esplora ora i cataloghi</a>
                 </div>
             </section>
             <section className="collection-home">
                 <div className="text-collection2">
-                    <p>Lorem Ipsum</p>
-                    <h2>Lorem ipsum dolor sit amet consectetur</h2>
-                    <a href="" className="button-link">Scopri di più</a>
+                    <p>Dettagli di stile.</p>
+                    <h2>Accessori per il Bagno</h2>
+                    <a href="" className="button-link">Scopri tutti gli accessori</a>
                 </div>
                 <div className="image-container">
                     <div id="img3">

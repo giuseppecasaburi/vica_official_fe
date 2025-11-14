@@ -18,21 +18,25 @@ function Presentation() {
                     </div>
                     <div id="content-text-area">
                         <div id="titolo">
-                            <h2>La nostra storia ha radici molto profonde</h2>
+                            <h2>Le Nostre Radici</h2>
                         </div>
                         <div id="image-presentation-responsive">
                             <img src="./family.jpg" alt="" />
                         </div>
                         <div id="testo">
                             <div className="retta"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!</p>
+                            <p>Nata oltre cinquant’anni fa, l’azienda ha costruito la propria identità sull’esperienza artigianale e sulla cura dei dettagli.
+                                La sua crescita è frutto di un impegno costante e della passione dei fondatori, sempre guidati da un forte senso di qualità.
+                                Negli anni, la dedizione del team ha permesso di consolidare una presenza stabile nel mondo dell’arredo bagno.
+                                Una storia fatta di competenza, continuità e solide radici italiane.</p>
                             <div className="retta"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!</p>
-                            <div className="retta"></div>
+                            <p>L’evoluzione dell’azienda è passata attraverso una selezione rigorosa dei materiali e un design sempre più ricercato.
+                                La gamma dei prodotti si è ampliata per rispondere alle esigenze di ambienti diversi, mantenendo coerenza estetica e funzionale.
+                                Ogni collezione riflette il dialogo continuo tra tecnica, stile e affidabilità.
+                                Un equilibrio che ha contribuito a definire un’immagine distintiva e riconoscibile.</p>
+                            
                         </div>
-                        <div id="bottone">
-                            <a href="" className="button-link">Scopri di più</a>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -40,11 +44,14 @@ function Presentation() {
                 <div id="container-identity">
                     <div id="content-text-area">
                         <div id="titolo">
-                            <h2>La nostra storia ha radici molto profonde</h2>
+                            <h2>Il Nostro Sguardo al Futuro</h2>
                         </div>
                         <div id="testo">
                             <div className="retta"></div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ea architecto unde labore soluta vero, itaque ab ducimus quia cupiditate veniam quisquam quasi repudiandae mollitia nihil consequatur aut blanditiis illum!</p>
+                            <p>Negli ultimi anni l’azienda ha intrapreso un percorso di rinnovamento, abbracciando un linguaggio più contemporaneo e minimale.
+                                Innovazione, ricerca e attenzione al design guidano oggi lo sviluppo di soluzioni attente alle tendenze moderne.
+                                L’obiettivo è creare prodotti che uniscano estetica, durata e comfort in modo armonioso.
+                                Una visione chiara che proietta il brand verso il futuro, senza perdere la propria identità.</p>
                         </div>
                     </div>
                     <div id="company-number">
