@@ -7,7 +7,7 @@ function WhatTheySay() {
                     <div className="recensione">
                         <div className="header-rec">
                             <div className="cerchio-wts">
-                                <img src="./test.webp" alt="" />
+                                <img src="./user.png" alt="" />
                             </div>
                             <h3>Martina R.</h3>
                         </div>
@@ -16,7 +16,7 @@ function WhatTheySay() {
                     <div className="recensione">
                         <div className="header-rec">
                             <div className="cerchio-wts">
-                                <img src="./test.webp" alt="" />
+                                <img src="./user.png" alt="" />
                             </div>
                             <h3>Lorenzo P.</h3>
                         </div>
@@ -25,7 +25,7 @@ function WhatTheySay() {
                     <div className="recensione">
                         <div className="header-rec">
                             <div className="cerchio-wts">
-                                <img src="./test.webp" alt="" />
+                                <img src="./user.png" alt="" />
                             </div>
                             <h3>Elisa M.</h3>
                         </div>

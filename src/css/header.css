@@ -26,10 +26,27 @@ header {
 #hero-img {
     height: 100%;
     position: relative;
-    background-image: url("../../public/test.webp");
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.hero-background.fade-out {
+    opacity: 0;
+}
+
+.hero-background.fade-in {
+    opacity: 1;
 }
 
 #hero-section {

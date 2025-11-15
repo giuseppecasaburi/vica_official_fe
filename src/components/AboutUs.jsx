@@ -12,7 +12,7 @@ function AboutUs() {
                         {/* PRIMA VARIANTE, ATTIVARE SOLO IL SEGUENTE SPAN */}
                         <span className="numero pulse">50 Anni</span>
                         <div className="cerchio">
-                            <img src="./test.webp" alt="" />
+                            <img src="./family.jpg" alt="" />
                         </div>
                         <span className="anni numero">Leader</span>
                         <h2>Nel Settore</h2>
