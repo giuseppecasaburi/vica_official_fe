@@ -78,11 +78,13 @@
 .text-collection1 {
     width: 40%;
     margin-left: auto;
+    color: var(--color-nero-scritte);
 }
 
 .text-collection2 {
     width: 40%;
     margin-right: auto;
+    color: var(--color-nero-scritte);
 }
 
 .collection-home .button-link {

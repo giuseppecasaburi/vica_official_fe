@@ -34,6 +34,10 @@ img {
 }
 
 /* STYLE */
+P {
+  color: var(--color-nero-scritte);
+}
+
 #logo-official {
   mix-blend-mode: multiply;
 }

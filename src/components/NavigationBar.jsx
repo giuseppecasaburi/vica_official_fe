@@ -40,10 +40,10 @@ function NavigationBar() {
                     </div>
 
                     <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
-                        <a href="" className="link-header" onClick={toggleMenu}>Catalogo</a>
-                        <a href="" className="link-header" onClick={toggleMenu}>Accessori</a>
-                        <a href="" className="link-header" onClick={toggleMenu}>Azienda</a>
-                        <a href="" className="link-header" onClick={toggleMenu}>Contatti</a>
+                        <Link to={"/"} className="link-header" onClick={toggleMenu}>Catalogo</Link>
+                        <Link to={"/"} className="link-header" onClick={toggleMenu}>Accessori</Link>
+                        <Link to={"/company"} className="link-header" onClick={toggleMenu}>Azienda</Link>
+                        <Link to={"/contacts"} className="link-header" onClick={toggleMenu}>Contatti</Link>
                     </div>
                 </div>
             </nav>

@@ -37,16 +37,20 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: opacity 0.5s ease-in-out;
     z-index: -1;
 }
 
-.hero-background.fade-out {
+.hero-background-next {
     opacity: 0;
+    /* transition: opacity 0.5s ease-in-out; */
+    /* REMOVED from here */
+    pointer-events: none;
 }
 
-.hero-background.fade-in {
+.hero-background-next.fade-in {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    /* ADDED here */
 }
 
 #hero-section {
@@ -111,6 +115,10 @@ header {
 @media screen and (max-width: 425px) {
     #hero-section {
         top: 55%;
+    }
+
+    .text-area span{
+        display: none;
     }
 }
 

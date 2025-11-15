@@ -16,7 +16,7 @@ function CtaFinal() {
                     <TextTyping />
                 </div>
                 <div id="cta-area">
-                    <img src="./test.webp" alt="" />
+                    <img src="./cta_catalogo.jpg" alt="" />
                     <div className="rettangolo"></div>
                     <a href="" className="button-link">Scopri di più</a>
                 </div>

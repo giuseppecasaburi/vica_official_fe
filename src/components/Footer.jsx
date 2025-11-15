@@ -1,5 +1,6 @@
 import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -11,10 +12,10 @@ function Footer() {
                             <img src="./logo.png" alt="" id="logo-official" />
                         </div>
                         <div id="anchor-link">
-                            <a href="" className="link-header">Catalogo</a>
-                            <a href="" className="link-header">Accessori</a>
-                            <a href="" className="link-header">Azienda</a>
-                            <a href="" className="link-header">Contatti</a>
+                            <Link to={"/"} className="link-header">Catalogo</Link>
+                            <Link to={"/"} className="link-header">Accessori</Link>
+                            <Link to={"/company"} className="link-header">Azienda</Link>
+                            <Link to={"/contacts"} className="link-header">Contatti</Link>
                         </div>
                     </div>
                     <div className="retta"></div>

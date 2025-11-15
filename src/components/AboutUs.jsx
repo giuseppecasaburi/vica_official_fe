@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function AboutUs() {
     return (
         <>
@@ -33,7 +35,7 @@ function AboutUs() {
                             <div className="retta"></div>
                         </div>
                         <div id="bottone">
-                            <a href="" className="button-link">Scopri di più</a>
+                            <Link to={"/company"} className="button-link">Scopri di più</Link>
                         </div>
                     </div>
                 </div>

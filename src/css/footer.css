@@ -63,6 +63,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 50px;
+    color: var(--color-nero-scritte);
 }
 
 #credit a {

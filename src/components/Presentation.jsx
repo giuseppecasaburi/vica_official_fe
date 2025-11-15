@@ -87,7 +87,7 @@ function Presentation() {
                     <div id="company-banner-content">
                         <h2>Affidati a dei professionisti</h2>
                         <p>Contattaci per una consulenza gratuita</p>
-                        <a className="button-link">Contatti</a>
+                        <a className="button-link">Contattaci</a>
                     </div>
                 </div>
             </section>

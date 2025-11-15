@@ -25,7 +25,7 @@ function CollectionHome() {
                 <div className="image-container">
                     <div id="img1">
                         <motion.img
-                            src="./test.webp"
+                            src="./anteprima_catalogo.jpg"
                             alt=""
                             id=""
                             style={{
@@ -37,7 +37,7 @@ function CollectionHome() {
                     </div>
                     <div id="img2">
                         <motion.img
-                            src="./test.webp"
+                            src="./anteprima_dettaglio.jpg"
                             alt=""
                             id=""
                             style={{
@@ -64,7 +64,7 @@ function CollectionHome() {
                 <div className="image-container">
                     <div id="img3">
                         <motion.img
-                            src="./test.webp"
+                            src="./anteprima_accessori.jpg"
                             alt=""
                             id=""
                             style={{
@@ -76,7 +76,7 @@ function CollectionHome() {
                     </div>
                     <div id="img4">
                         <motion.img
-                            src="./test.webp"
+                            src="./dettaglio_accessori.jpg"
                             alt=""
                             id=""
                             style={{
