@@ -60,25 +60,6 @@ function HeroSection() {
                     <NavigationBar />
                     <section id="hero-section">
                         <div className="hero-container">
-                            <div className="text-area">
-                                {homePage ? (
-                                    <h2 className="animate-title">
-                                        Da oltre 50 anni progettiamo bagni che durano nel tempo, come le storie di chi li vive.
-                                    </h2>
-                                ) : companyPage ? (
-                                    <h2 className="animate-title">
-                                        Una storia che si rinnova a ogni progetto<span>, da oltre mezzo secolo dedicata a valorizzare il tuo spazio</span>.
-                                    </h2>
-                                ) : null}
-                            </div>
-                            {homePage ? (
-                                <div div className="button-area animate-text">
-                                    <a href="" className="button-link">Cataloghi</a>
-                                    <a href="" className="button-link">Contattaci</a>
-                                </div>
-                            ) :
-                                ""
-                            }
                         </div>
                     </section>
                 </div >

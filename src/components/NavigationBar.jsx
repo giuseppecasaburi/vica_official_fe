@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 function NavigationBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,6 +37,7 @@ function NavigationBar() {
                         <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
                         <Link to={"/company"} className="link-header nav-links" onClick={closeMenu}>Azienda</Link>
                         <Link to={"/contacts"} className="link-header nav-links" onClick={closeMenu}>Contatti</Link>
+                        <ThemeToggle/>
                     </div>
 
                     {/* Overlay */}

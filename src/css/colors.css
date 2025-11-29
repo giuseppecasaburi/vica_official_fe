@@ -4,16 +4,17 @@
     --color-btn-banner: #F5E6E0;
     --color-oro: #D4AF37;
     --color-nero-scritte: #2D2D2D
-
-    /* PALETTE SECONDARIA */
-    /* --color-background: #1A1A1A;
-    --color-btn-banner: #000000;
-    --color-oro: #D4AF37;
-    --color-nero-scritte: #F8F9FA */
-
-    /* PALETTE TERZIARIA */
-    /* --color-background: #FAF7F0;
+        /* PALETTE TERZIARIA */
+        /* --color-background: #FAF7F0;
     --color-btn-banner: #F5E6E0;
     --color-oro: #D4AF37;
     --color-nero-scritte: #2D2D2D */
+}
+
+:root[data-theme="dark"] {
+    /* PALETTE SECONDARIA */
+    --color-background: #1A1A1A;
+    --color-btn-banner: #000000;
+    --color-oro: #D4AF37;
+    --color-nero-scritte: #F8F9FA
 }

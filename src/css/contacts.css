@@ -2,6 +2,7 @@
     width: 80vw;
     margin: 0 auto;
     display: flex;
+    margin: 200px auto;
 }
 
 #tag-contact {
@@ -83,10 +84,24 @@
     outline: none;
 }
 
-form .button-link {
-    background-color: var(--color-background);
+.button-form {
+    display: block;
     width: 90%;
+    min-width: 100px;
+    min-height: 30px;
+    text-align: center;
+    align-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 auto;
     margin-bottom: 30px;
+    background-color: var(--color-background);
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    color: var(--color-oro);
+    cursor: pointer;
 }
 
 @media screen and (max-width:1354px) {
@@ -125,19 +140,50 @@ form .button-link {
         align-content: center;
     }
 
-    /* #form-contact {
-        width: 80%;
-        margin: 0 auto;
-        align-items: center;
-        align-self: center;
+    #form-contact {
+        width: 100%;
+        min-height: 500px;
         align-content: center;
-        
-    } */
+    }
 
     #form-container {
         width: 100%;
-        padding: 30px 20px;
         background-color: var(--color-btn-banner);
         border-radius: 100px;
+        min-height: 550px;
+        padding: 0;
+    }
+
+    #form-container h2 {
+        padding: 30px 0 20px;
+    }
+
+    .button-form {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #form-container h2 {
+        font-size: 24px;
+        word-wrap: break-word;
+    }
+
+    .fild-input {
+        width: 70%;
+    }
+
+    .button-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #form-container h2 {
+        font-size: 28px;
+    }
+
+    #form-span {
+        display: none;
     }
 }

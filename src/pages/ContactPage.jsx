@@ -31,7 +31,7 @@ function ContactPage() {
                     </div>
                     <div id="form-contact">
                         <div id="form-container">
-                            <h2>Contattaci in un click!</h2>
+                            <h2>Contattaci <span id="form-span">in un click!</span></h2>
                             <form action="">
                                 <div className="form-input">
                                     <input type="text" placeholder="Nome" className="fild-input" />
@@ -45,7 +45,7 @@ function ContactPage() {
                                 <div className="form-input">
                                     <textarea type="text" placeholder="Descrizione" className="fild-input" />
                                 </div>
-                                <button type="submit" className="button-link">Invia Email</button>
+                                <button type="submit" className="button-form">Invia Email</button>
                             </form>
                         </div>
                     </div>

@@ -4,11 +4,13 @@ import HomePage from './pages/HomePage'
 import CompanyPage from './pages/CompanyPage'
 import ContactPage from './pages/ContactPage'
 import ScrollToTop from './components/ScrollToTop'
+import { ThemeProvider } from './components/ThemeProvider'
 
 function App() {
 
   return (
     <>
+    <ThemeProvider>
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
@@ -19,6 +21,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+    </ThemeProvider>
     </>
   )
 }
