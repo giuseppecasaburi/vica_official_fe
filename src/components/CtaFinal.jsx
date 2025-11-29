@@ -6,13 +6,8 @@ function CtaFinal() {
             <section id="cta-final">
                 <div id="logo-area">
                     <div className="container-img">
-                        <img src="./logo.png" alt="" id="logo-official" />
+                        <img src="./Documento2.webp" alt="" id="logo-official" />
                     </div>
-
-                    {/* VERSIONE FIGMA PRIMA DEL TYPING */}
-                    {/* <div className="">
-                        <h2>Costruisci il bagno <br /> <span>dei tuoi sogni.</span></h2>
-                    </div> */}
                     <TextTyping />
                 </div>
                 <div id="cta-area">

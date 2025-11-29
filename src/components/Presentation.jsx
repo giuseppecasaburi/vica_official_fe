@@ -12,8 +12,6 @@ function Presentation() {
             <section id="company-presentation">
                 <div id="container-presentation">
                     <div id="image-presentation">
-                        {/* <div className="retta"></div>
-                        <div className="retta"></div> */}
                         <img src="./family.jpg" alt="" />
                     </div>
                     <div id="content-text-area">
@@ -34,9 +32,9 @@ function Presentation() {
                                 La gamma dei prodotti si è ampliata per rispondere alle esigenze di ambienti diversi, mantenendo coerenza estetica e funzionale.
                                 Ogni collezione riflette il dialogo continuo tra tecnica, stile e affidabilità.
                                 Un equilibrio che ha contribuito a definire un’immagine distintiva e riconoscibile.</p>
-                            
+
                         </div>
-                        
+
                     </div>
                 </div>
             </section>

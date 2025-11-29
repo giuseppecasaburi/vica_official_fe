@@ -6,6 +6,7 @@ footer {
     margin: 0 auto;
     width: 90vw;
     padding-top: 50px;
+    position: relative;
 }
 
 #anchor {
@@ -16,16 +17,20 @@ footer {
 }
 
 #anchor-img {
-    width: 20%;
-    margin-left: 100px;
+    width: 75%;
+    margin-left: 10%;
 }
 
 #anchor-link {
     display: flex;
-    justify-content: space-around;
-    margin-right: 100px;
-    margin-left: 250px;
-    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#anchor-link .link-header {
+    margin: 0 10px;
 }
 
 #footer-container .retta {
@@ -79,21 +84,24 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1150px) {
-    #anchor-img {
-        display: none;
-    }
+#anchor-link .link-header {
+    color: var(--color-nero-scritte) !important;
+}
 
-    #anchor {
-        justify-content: center;
-        gap: 50px;
+@media screen and (max-width: 1180px) {
+    #anchor-img {
+        margin-bottom: 80px;
     }
 
     #anchor-link {
-        margin-left: 0;
-        margin-right: 0;
-        width: 80%;
+        flex-direction: column;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    #anchor-link .link-header {
+        margin: 10px 0px;
+        font-size: 16px;
     }
 
     #footer-container .retta {
@@ -116,26 +124,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
     #footer-container {
         width: 95vw;
         padding-top: 30px;
     }
 
+    #anchor-img {
+        width: 95%;
+        margin-left: 0px;
+    }
+
     #anchor {
         margin-top: 15px;
         gap: 30px;
-    }
-
-    #anchor-link {
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-        align-items: center;
-    }
-
-    .link-header {
-        font-size: 16px;
     }
 
     #footer-container .retta {
@@ -169,12 +171,9 @@ footer {
         padding-top: 25px;
     }
 
-    #anchor {
-        gap: 20px;
-    }
-
-    #anchor-link {
-        gap: 12px;
+    #anchor-img {
+        width: 90%;
+        margin-left: 5%;
     }
 
     .link-header {
