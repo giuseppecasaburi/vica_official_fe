@@ -1,7 +1,10 @@
+import Header from "../components/Header";
+
 function ContactPage() {
     return (
         <>
             <main id="contatti">
+                <Header />
                 <section id="area-form">
                     <div id="tag-contact">
                         <h2>Il nostro team è qui per ascoltarti e offrirti tutto il supporto di cui hai bisogno.</h2>

@@ -1,8 +1,3 @@
-#contatti {
-    /* NECESSARI PER LA NAV */
-    margin-top: 150px;
-}
-
 #area-form {
     width: 80vw;
     margin: 0 auto;
@@ -55,7 +50,7 @@
 
 #form-container {
     width: 60%;
-    margin: 0 auto;
+    margin-left: auto;
     padding: 30px 20px;
     background-color: var(--color-btn-banner);
     border-radius: 100px;
@@ -94,7 +89,7 @@ form .button-link {
     margin-bottom: 30px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1354px) {
     .ballon-row {
         gap: 20px;
     }

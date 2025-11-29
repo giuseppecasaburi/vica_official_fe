@@ -1,12 +1,15 @@
 import { useLocation } from "react-router-dom";
 import HeroSlider from "./HeroSlider";
 import { useEffect, useState } from "react";
+import NavigationBar from "./NavigationBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function HeroSection() {
     const location = useLocation();
     const homePage = location.pathname === "/";
     const companyPage = location.pathname === "/company";
-    const contactPage = location.pathname === "/";
+    const contactPage = location.pathname === "/contacts";
     const cataloguesPage = location.pathname === "/";
     const cataloguePage = location.pathname === "/";
 
@@ -19,11 +22,6 @@ function HeroSection() {
         "/hero3.jpg",
         "/hero4.jpg"
     ];
-
-    const textHero = [
-        "Da oltre 50 anni progettiamo bagni che durano nel tempo, come le storie di chi li vive.",
-        "Una storia che si rinnova a ogni progetto, da oltre mezzo secolo dedicata a valorizzare il tuo spazio.",
-    ]
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -59,6 +57,7 @@ function HeroSection() {
                     style={{ backgroundImage: `url(${images[imageIndex.next]})` }}
                 ></div>
                 <div id="overlay">
+                    <NavigationBar />
                     <section id="hero-section">
                         <div className="hero-container">
                             <div className="text-area">
@@ -83,7 +82,11 @@ function HeroSection() {
                         </div>
                     </section>
                 </div >
-                {companyPage ? <HeroSlider /> : ""}
+                {companyPage ? <HeroSlider /> : (<p className="btn-scopri scroll-button">
+                    Scopri di più <br />
+                    <FontAwesomeIcon icon={faArrowDown} />
+                </p>)}
+
             </div >
         </>
     )

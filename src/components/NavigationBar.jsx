@@ -1,53 +1,47 @@
-import { useState } from "react";
-import IsMobile from "./IsMobile";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function NavigationBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const isMobile = IsMobile(768);
-
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <>
             <nav>
+                <div className="contenitore">
+                    <img src="./Documento2.webp" alt="" style={{ mixBlendMode: "color-burn" }} />
 
-                <div className={`menu ${isMobile ? 'd-none' : ''}`}>
-                    <Link to={"/"} className="link-header nav-links">Catalogo</Link>
-                    <Link to={"/"} className="link-header nav-links">Accessori</Link>
-                    <img src="./logo.png" alt="" id="logo-official" />
-                    <Link to={"/company"} className="link-header nav-links">Azienda</Link>
-                    <Link to={"/contacts"} className="link-header nav-links">Contatti</Link>
-                </div>
+                    {/* Hamburger Button */}
+                    <button
+                        className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+                        onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
-                {/* RESPONSIVE */}
-                <div className={`menu-responsive ${isMobile ? '' : 'd-none'} ${isMenuOpen ? 'menu-open' : ''}`}>
-                    <div className="menu-responsive-header">
-                        <img src="./logo.png" alt="" id="logo-official" />
-                        <button
-                            className={`hamburger-btn ${isMenuOpen ? 'active' : ''}`}
-                            onClick={toggleMenu}
-                            aria-label="Menu"
-                        >
-                            <FontAwesomeIcon icon={faBars} />
-                        </button>
+                    {/* Navigation Links */}
+                    <div className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
+                        <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Catalogo</Link>
+                        <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Accessori</Link>
+                        <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
+                        <Link to={"/company"} className="link-header nav-links" onClick={closeMenu}>Azienda</Link>
+                        <Link to={"/contacts"} className="link-header nav-links" onClick={closeMenu}>Contatti</Link>
                     </div>
 
-                    <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
-                        <Link to={"/"} className="link-header" onClick={toggleMenu}>Catalogo</Link>
-                        <Link to={"/"} className="link-header" onClick={toggleMenu}>Accessori</Link>
-                        <Link to={"/company"} className="link-header" onClick={toggleMenu}>Azienda</Link>
-                        <Link to={"/contacts"} className="link-header" onClick={toggleMenu}>Contatti</Link>
-                    </div>
+                    {/* Overlay */}
+                    {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
                 </div>
             </nav>
-
         </>
     )
 }

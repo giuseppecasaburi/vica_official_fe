@@ -5,15 +5,8 @@ header {
     height: 100vh;
 }
 
-.header,
-#hero-img,
-#overlay {
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
-
 .header {
-    height: 70%;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -42,15 +35,12 @@ header {
 
 .hero-background-next {
     opacity: 0;
-    /* transition: opacity 0.5s ease-in-out; */
-    /* REMOVED from here */
     pointer-events: none;
 }
 
 .hero-background-next.fade-in {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    /* ADDED here */
 }
 
 #hero-section {
@@ -96,42 +86,49 @@ header {
     animation-delay: 0.3s;
 }
 
-@media screen and (min-width: 1600px) {
-    .header {
-        height: 70%;
+.btn-scopri {
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 32px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3.40px;
+    font-size: 24px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.scroll-button {
+    animation: bounce-down-up 2s infinite ease-in-out;
+    transition: transform 0.3s;
+}
+
+/* ANIMAZIONE BOTTONE */
+@keyframes bounce-down-up {
+    0% {
+        transform: translate(-50%, 0);
     }
 
-    .text-area h2 {
-        font-size: 42px;
+    30% {
+        transform: translate(-50%, 25px);
+    }
+
+    60% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        height: 70%;
-    }
 }
 
 @media screen and (max-width: 425px) {
     #hero-section {
         top: 55%;
-    }
-
-    .text-area span{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .header {
-        height: 80%;
-    }
-
-    .button-area {
-        flex-direction: column;
-    }
-
-    .button-area a {
-        margin-top: 10px;
     }
 }

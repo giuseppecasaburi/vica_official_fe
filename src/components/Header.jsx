@@ -8,11 +8,11 @@ function Header() {
 
     return (
         <>
-            <header style={hideHeader ? {} : {height:"85vh"}}>
-                <div className="header" style={hideHeader ? {} : {height:"80%"}}>
+            <header>
+                <div className="header">
                     <HeroSection />
                 </div>
-                {hideHeader ? <BoxNumber /> : ""}
+                {/* {hideHeader ? <BoxNumber /> : ""} */}
             </header>
         </>
     )
