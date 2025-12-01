@@ -28,7 +28,7 @@
 
 #company-number {
     width: 500px;
-    height: 300px;
+    height: 350px;
     background-color: var(--color-btn-banner);
     border-radius: 50px;
     margin: auto 0;
@@ -160,10 +160,6 @@
 
     #content-text-area #testo .retta:nth-child(1) {
         display: none;
-    }
-
-    #company-number {
-        width: 350px;
     }
 
     #conteiner-company-number {

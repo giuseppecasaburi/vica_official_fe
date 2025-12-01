@@ -1,9 +1,12 @@
+// NavigationBar.jsx
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 function NavigationBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isNavHidden, setIsNavHidden] = useState(false);
+    const [lastScroll, setLastScroll] = useState(0);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -13,9 +16,39 @@ function NavigationBar() {
         setIsMenuOpen(false);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.pageYOffset;
+
+            // Se siamo in cima alla pagina, mostra sempre la navbar
+            if (currentScroll <= 0) {
+                setIsNavHidden(false);
+                setLastScroll(currentScroll);
+                return;
+            }
+
+            if (currentScroll > lastScroll) {
+                // Scroll verso il basso - nascondi navbar
+                setIsNavHidden(true);
+            } else {
+                // Scroll verso l'alto - mostra navbar
+                setIsNavHidden(false);
+            }
+
+            setLastScroll(currentScroll);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup: rimuovi l'event listener quando il componente viene smontato
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScroll]);
+
     return (
         <>
-            <nav>
+            <nav className={isNavHidden ? 'hidden' : ''}>
                 <div className="contenitore">
                     <img src="./Documento2.webp" alt="" style={{ mixBlendMode: "color-burn" }} />
 
@@ -37,7 +70,7 @@ function NavigationBar() {
                         <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
                         <Link to={"/company"} className="link-header nav-links" onClick={closeMenu}>Azienda</Link>
                         <Link to={"/contacts"} className="link-header nav-links" onClick={closeMenu}>Contatti</Link>
-                        <ThemeToggle/>
+                        <ThemeToggle />
                     </div>
 
                     {/* Overlay */}

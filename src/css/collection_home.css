@@ -94,6 +94,7 @@
 .text-collection1 h2,
 .text-collection2 h2 {
     font-size: 32px;
+    padding: 20px 0;
 }
 
 .text-collection1 p,
@@ -116,7 +117,7 @@
 
     .text-collection1 h2,
     .text-collection2 h2 {
-        font-size: 52px;
+        font-size: 48px;
     }
 
     .text-collection1 p,
