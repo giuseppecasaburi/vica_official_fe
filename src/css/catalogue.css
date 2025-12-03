@@ -58,7 +58,18 @@
     order: 2;
 }
 
+@media screen and (min-width:1600px) {
+    #catalogue-area {
+        margin: 100px auto 150px;
+    }
+}
+
 @media screen and (max-width: 950px) {
+    #catalogue-area {
+        width: 90%;
+        margin: 180px auto;
+    }
+
     #container-catalogue-responsive {
         display: block;
     }
@@ -78,6 +89,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    #catalogue-area {
+        width: 95%;
+    }
+
     .image-catalogue {
         width: 100%;
         margin: 20px auto 50px;

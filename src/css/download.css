@@ -1,0 +1,138 @@
+#download-area {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.download-header {
+    text-align: center;
+}
+
+.download-header h2 {
+    color: var(--color-oro);
+    font-size: 42px;
+}
+
+.download-header p {
+    font-size: 28px;
+}
+
+.download-container {
+    display: flex;
+    gap: 60px;
+    margin: 50px 0;
+}
+
+.single-download {
+    width: calc((100% - 120px) / 3);
+}
+
+.single-download .image {
+    margin: 0 auto;
+    height: 300px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text h3 {
+    padding: 20px 0 0;
+    font-size: 32px;
+    color: var(--color-oro);
+}
+
+.text .retta {
+    width: 90%;
+    margin: 20px 0;
+    background-color: var(--color-oro);
+    position: static;
+}
+
+.text .button-link {
+    margin: 20px 0px;
+}
+
+/* Tablet e Mobile - Slider con scroll laterale */
+@media screen and (max-width: 768px) {
+    #download-area {
+        width: 100%;
+        margin: 150px 0 100px;
+    }
+
+    .download-header {
+        padding: 0 20px;
+    }
+
+    .download-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        /* scroll-snap-type: x mandatory; */
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling su iOS */
+        gap: 30px;
+        padding: 0 20px 20px 20px;
+        margin: 30px 0;
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-oro) transparent;
+    }
+
+    /* Stile scrollbar per Chrome/Safari */
+    .download-container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .download-container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .download-container::-webkit-scrollbar-thumb {
+        background-color: var(--color-oro);
+        border-radius: 10px;
+    }
+
+    .single-download {
+        min-width: 280px;
+        width: 280px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .single-download .image {
+        height: 250px;
+    }
+
+    .text h3 {
+        font-size: 24px;
+    }
+
+    .text .retta {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Mobile piccoli */
+@media screen and (max-width: 480px) {
+    .download-header h2 {
+        font-size: 32px;
+    }
+
+    .download-header p {
+        font-size: 20px;
+    }
+
+    .single-download {
+        min-width: 250px;
+        width: 250px;
+    }
+
+    .single-download .image {
+        height: 200px;
+    }
+
+    .text h3 {
+        font-size: 20px;
+    }
+}
