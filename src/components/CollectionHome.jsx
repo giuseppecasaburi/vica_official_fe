@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function CollectionHome() {
     const { scrollY } = useScroll();
@@ -52,14 +53,14 @@ function CollectionHome() {
                 <div className="text-collection1">
                     <p>Design e ispirazione.</p>
                     <h2>Collezioni di Arredo Bagno</h2>
-                    <a href="" className="button-link">Esplora ora i cataloghi</a>
+                    <Link to={"/catalogues"} className="button-link">Esplora ora i cataloghi</Link>
                 </div>
             </section>
             <section className="collection-home">
                 <div className="text-collection2">
                     <p>Dettagli di stile.</p>
                     <h2>Accessori per il Bagno</h2>
-                    <a href="" className="button-link">Scopri tutti gli accessori</a>
+                    <Link to={""} className="button-link">Scopri tutti gli accessori</Link>
                 </div>
                 <div className="image-container">
                     <div id="img3">

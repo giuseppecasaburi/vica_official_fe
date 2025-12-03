@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TextTyping from "./TextTyping";
 
 function CtaFinal() {
@@ -13,7 +14,7 @@ function CtaFinal() {
                 <div id="cta-area">
                     <img src="./cta_catalogo.jpg" alt="" />
                     <div className="rettangolo"></div>
-                    <a href="" className="button-link">Scopri di più</a>
+                    <Link to={"/catalogues"} className="button-link">Scopri di più</Link>
                 </div>
             </section>
         </>

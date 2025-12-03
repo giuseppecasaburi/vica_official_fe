@@ -12,7 +12,7 @@ function Footer() {
                             <img src="./logo.png" alt="" id="logo-official" />
                         </div>
                         <div id="anchor-link">
-                            <Link to={"/"} className="link-header">Catalogo</Link>
+                            <Link to={"/catalogues"} className="link-header">Catalogo</Link>
                             <Link to={"/"} className="link-header">Accessori</Link>
                             <Link to={"/"} className="link-header">Download</Link>
                             <Link to={"/company"} className="link-header">Azienda</Link>

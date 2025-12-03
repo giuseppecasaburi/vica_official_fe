@@ -65,7 +65,7 @@ function NavigationBar() {
 
                     {/* Navigation Links */}
                     <div className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
-                        <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Catalogo</Link>
+                        <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Catalogo</Link>
                         <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Accessori</Link>
                         <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
                         <Link to={"/company"} className="link-header nav-links" onClick={closeMenu}>Azienda</Link>
