@@ -127,7 +127,11 @@
         flex-shrink: 0;
         scroll-snap-align: start;
         margin: 0 !important;
-        /* Rimuove i margin top/bottom alternati */
+    }
+
+    .bs-card:hover {
+        transform: none;
+        cursor: default;
     }
 
     .bs-card:nth-child(odd) {
