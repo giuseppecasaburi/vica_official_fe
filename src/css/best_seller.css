@@ -1,0 +1,174 @@
+#best-seller {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#best-seller-container {
+    margin: 100px 0 200px;
+}
+
+#best-seller-container h2 {
+    width: 30%;
+    font-size: 42px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid var(--color-oro);
+    padding-bottom: 10px;
+    margin: 0 auto 50px;
+    color: var(--color-oro);
+}
+
+.product-bs {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bs-card {
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.bs-card:nth-child(odd) {
+    margin-top: auto;
+}
+
+.bs-card:nth-child(even) {
+    margin-bottom: auto;
+}
+
+.bs-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bs-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bs-card h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 60px 20px 20px;
+    text-align: center;
+    color: var(--color-oro);
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 1000px) {
+    .product-bs {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    #best-seller {
+        width: 100%;
+        margin: 0;
+    }
+
+    #best-seller-container {
+        margin: 100px 0 150px;
+    }
+
+    #best-seller-container h2 {
+        width: 90%;
+        font-size: 36px;
+        padding: 0 20px 20px;
+    }
+
+    .product-bs {
+        min-height: auto;
+        border: none;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        gap: 30px;
+        padding: 0 20px 20px 20px;
+        scrollbar-width: thin;
+        scrollbar-color: orange transparent;
+        justify-content: start;
+    }
+
+    /* Stile scrollbar per Chrome/Safari */
+    .product-bs::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .product-bs::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .product-bs::-webkit-scrollbar-thumb {
+        background-color: orange;
+        border-radius: 10px;
+    }
+
+    .bs-card {
+        min-width: 280px;
+        width: 280px;
+        height: 380px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        margin: 0 !important;
+        /* Rimuove i margin top/bottom alternati */
+    }
+
+    .bs-card:nth-child(odd) {
+        margin-top: 0;
+    }
+
+    .bs-card:nth-child(even) {
+        margin-bottom: 0;
+    }
+
+    .bs-card h4 {
+        font-size: 18px;
+        padding: 50px 15px 15px;
+    }
+}
+
+/* Mobile piccoli */
+@media screen and (max-width: 480px) {
+    #best-seller-container {
+        margin: 80px 0 100px;
+    }
+
+    #best-seller-container h2 {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    .product-bs {
+        gap: 20px;
+        padding: 0 15px 15px 15px;
+    }
+
+    .bs-card {
+        min-width: 250px;
+        width: 250px;
+        height: 340px;
+        border-radius: 40px;
+    }
+
+    .bs-card h4 {
+        font-size: 16px;
+        padding: 40px 12px 12px;
+    }
+}
