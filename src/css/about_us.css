@@ -54,7 +54,6 @@
 }
 
 .cerchio img {
-    object-fit: cover;
     height: 100%;
     align-content: center;
 }
