@@ -6,6 +6,7 @@ function ArticoliCorrelati() {
         <>
             <section id="articoli-correlati">
                 <h2>Articoli Correlati</h2>
+                <div className="retta"></div>
                 <div className="product-bs">
                     <ProductCard />
                     <ProductCard />

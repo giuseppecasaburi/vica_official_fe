@@ -81,6 +81,11 @@
         width: 100%;
     }
 
+    .product-element:hover img {
+        transform: none;
+        cursor: default;
+    }
+
     .product-card {
         border-radius: 30px;
         height: 280px;

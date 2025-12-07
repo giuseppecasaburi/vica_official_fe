@@ -1,5 +1,6 @@
 import AccessoriCorrelati from "../components/AccessoriCorrelati";
 import ArticoliCorrelati from "../components/ArticoliCorrelati";
+import InfoProduct from "../components/InfoProduct";
 import Header from "../components/Header";
 
 function ProductPage() {
@@ -7,8 +8,9 @@ function ProductPage() {
         <>
             <main>
                 <Header />
+                <InfoProduct />
                 <AccessoriCorrelati />
-                <ArticoliCorrelati/>
+                <ArticoliCorrelati />
             </main>
         </>
     )
