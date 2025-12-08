@@ -79,8 +79,8 @@
     min-height: 50px;
 }
 
-textarea {
-    min-height: 100px;
+.text-area {
+    min-height: 80px;
 }
 
 .fild-input:focus {
@@ -115,7 +115,11 @@ textarea {
     transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width:1354px) {
+.ballon-slider {
+    display: none;
+}
+
+@media screen and (max-width:1800px) {
     .ballon-row {
         gap: 20px;
     }
@@ -139,7 +143,7 @@ textarea {
     }
 }
 
-@media screen and (max-width:827px) {
+@media screen and (max-width:1000px) {
     #area-form {
         flex-direction: column;
         align-items: center;
@@ -161,7 +165,7 @@ textarea {
         width: 100%;
         background-color: var(--color-btn-banner);
         border-radius: 100px;
-        min-height: 500px;
+        min-height: 550px;
         padding: 0;
     }
 
@@ -187,7 +191,61 @@ textarea {
     .button-form {
         width: 70%;
     }
+
+    #tag-contact {
+        overflow: hidden;
+    }
+
+    .ballon-row {
+        display: none;
+    }
+
+    .ballon-slider {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        gap: 20px;
+        padding: 0 20px 20px 20px;
+        margin: 30px 0;
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-oro) transparent;
+        justify-content: flex-start;
+    }
+
+    /* Stile scrollbar per Chrome/Safari */
+    .ballon-slider::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .ballon-slider::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ballon-slider::-webkit-scrollbar-thumb {
+        background-color: var(--color-oro);
+        border-radius: 10px;
+    }
+
+    .ballon {
+        min-width: 200px;
+        width: 200px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
 }
+
+@media screen and (max-width: 400px) {
+    #form-container h2 {
+        font-size: 28px;
+    }
+
+    #form-span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {}
 
 @media screen and (max-width: 400px) {
     #form-container h2 {

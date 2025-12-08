@@ -52,6 +52,10 @@
     margin-top: 20px;
 }
 
+.info-box span {
+    color: var(--color-nero-scritte);
+}
+
 #articoli-correlati h2 {
     margin-bottom: 30px;
 }
