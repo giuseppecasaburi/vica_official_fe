@@ -36,11 +36,49 @@ function Article() {
                         <div id="color-article">
                             <h4>Colori Disponibili</h4>
                             <div className="retta"></div>
-                            <div className="colore">
-                                <div className="cerchio">
-                                    <img src="./azzurro_rodi.jpg" alt="" />
+                            <div className="colors-grid">
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
                                 </div>
-                                <p>Bianco Antico</p>
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
+                                </div>
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
+                                </div>
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
+                                </div>
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
+                                </div>
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
+                                </div>
+                                <div className="colore">
+                                    <div className="cerchio">
+                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                    </div>
+                                    <p>Bianco Antico</p>
+                                </div>
                             </div>
                         </div>
                     </div>
