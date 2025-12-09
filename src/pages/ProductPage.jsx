@@ -1,13 +1,15 @@
+import Header from "../components/Header";
+import Article from "../components/Article";
 import AccessoriCorrelati from "../components/AccessoriCorrelati";
 import ArticoliCorrelati from "../components/ArticoliCorrelati";
 import InfoProduct from "../components/InfoProduct";
-import Header from "../components/Header";
 
 function ProductPage() {
     return (
         <>
             <main>
                 <Header />
+                <Article />
                 <InfoProduct />
                 <AccessoriCorrelati />
                 <ArticoliCorrelati />

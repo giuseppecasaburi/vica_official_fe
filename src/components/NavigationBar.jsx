@@ -50,7 +50,7 @@ function NavigationBar() {
         <>
             <nav className={isNavHidden ? 'hidden' : ''}>
                 <div className="contenitore">
-                    <img src="./Documento2.webp" alt="" style={{ mixBlendMode: "color-burn" }} />
+                    <img src="./Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
 
                     {/* Hamburger Button */}
                     <button
