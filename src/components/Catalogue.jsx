@@ -14,7 +14,7 @@ function Catalogue({ layout }) {
                             <h2>Catalogo Cannettato</h2>
                             <div className="retta"></div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolorem nam in? Eaque accusamus maxime laborum ex! Rem corporis, architecto perspiciatis repellendus deserunt ea sit saepe commodi voluptatibus, molestias accusantium.</p>
-                            <Link to={""} className="button-link">Scopri di più</Link>
+                            <Link to={"/catalogue"} className="button-link">Scopri di più</Link>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ function Catalogue({ layout }) {
                                 <img src="./anteprima_catalogo.jpg" alt="" />
                             </div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolorem nam in? Eaque accusamus maxime laborum ex! Rem corporis, architecto perspiciatis repellendus deserunt ea sit saepe commodi voluptatibus, molestias accusantium.</p>
-                            <Link to={""} className="button-link">Scopri di più</Link>
+                            <Link to={"/catalogue"} className="button-link">Scopri di più</Link>
                         </div>
                     </div>
                 </div>

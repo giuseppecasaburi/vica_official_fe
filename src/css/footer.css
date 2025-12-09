@@ -52,6 +52,7 @@ footer {
     height: 70px;
     border-radius: 50%;
     background-color: var(--color-background);
+    color: var(--color-nero-scritte);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -43,10 +43,6 @@ P {
   color: var(--color-nero-scritte);
 }
 
-#logo-official {
-  mix-blend-mode: multiply;
-}
-
 .button-link {
   display: inline-block;
   min-width: 100px;

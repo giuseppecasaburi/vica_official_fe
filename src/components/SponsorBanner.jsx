@@ -49,7 +49,7 @@ function SponsorBanner() {
                     ×
                 </button>
                 <div className="img-container">
-                    <img src="./logo.png" alt="" />
+                    <img src="./Documento224.png" alt="" />
                 </div>
                 <div className="text-container">
                     <p>10 Clienti hanno visualizzato il portale nell'ultima ora!</p>

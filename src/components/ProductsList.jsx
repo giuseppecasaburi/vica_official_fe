@@ -14,7 +14,7 @@ function ProductsList() {
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
-                    <Link className="button-link">Carica Altri</Link>
+                    <Link to={"/product"} className="button-link">Carica Altri</Link>
                 </div>
             </section>
         </>

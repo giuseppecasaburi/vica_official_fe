@@ -46,6 +46,14 @@ function NavigationBar() {
         };
     }, [lastScroll]);
 
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isMenuOpen]);
+
     return (
         <>
             <nav className={isNavHidden ? 'hidden' : ''}>
@@ -67,7 +75,7 @@ function NavigationBar() {
                     <div className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
                         <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Catalogo</Link>
                         <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Accessori</Link>
-                        <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
+                        <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
                         <Link to={"/company"} className="link-header nav-links" onClick={closeMenu}>Azienda</Link>
                         <Link to={"/contacts"} className="link-header nav-links" onClick={closeMenu}>Contatti</Link>
                         <ThemeToggle />
