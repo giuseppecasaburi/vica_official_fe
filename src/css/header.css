@@ -2,8 +2,8 @@
 @import './hero_slider.css';
 
 header {
-    height: 100dvh;
     height: 100vh;
+    height: 100dvh;
 }
 
 .header {
