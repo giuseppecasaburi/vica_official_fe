@@ -2,6 +2,7 @@
 @import './hero_slider.css';
 
 header {
+    height: 100dvh;
     height: 100vh;
 }
 
@@ -14,6 +15,11 @@ header {
 #overlay {
     height: 100%;
     background-color: #04040456;
+}
+
+/* RIMOZIONE DELL'OVERLAY COME DA RICHIESTA */
+#hero-img #overlay {
+    background-color: #04040400;
 }
 
 #hero-img {
@@ -89,9 +95,6 @@ header {
     100% {
         transform: translate(-50%, 0);
     }
-}
-
-@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 425px) {
