@@ -39,20 +39,30 @@
     color: var(--color-oro);
 }
 
-#info-product img {
-    height: 300px;
-}
-
 .info-area {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
+#image-block {
+    width: 48%;
+}
+
+#image-block img {
+    width: 100%;
+    height: 100%;
+}
+
+#text-block {
+    width: 48%;
+    height: 100%;
+}
+
 .info-box {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .info-box span {
@@ -90,11 +100,34 @@
         scroll-snap-align: start;
         margin: 0 !important;
     }
-}
 
-@media screen and (max-width: 700px) {
     .info-area {
         flex-direction: column;
+    }
+
+    #image-block {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #text-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #text-block {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #text-block {
+        display: block;
+    }
+
+    .info-box:nth-child(1) {
+        margin-top: 20px;
     }
 }
 

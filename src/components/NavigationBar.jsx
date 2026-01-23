@@ -56,10 +56,12 @@ function NavigationBar() {
 
     return (
         <>
-            <nav className={isNavHidden ? 'hidden' : ''}>
-                <div className="contenitore">
-                    <img src="./Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
+            <nav className={`nav-overlay ${isNavHidden ? 'hidden' : ''}`}>
+                <div id="blocco-genitore">
+                    <div id="blocco-logo">
+                        <img src="./Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
 
+                    </div>
                     {/* Hamburger Button */}
                     <button
                         className={`hamburger ${isMenuOpen ? 'active' : ''}`}
@@ -70,9 +72,7 @@ function NavigationBar() {
                         <span></span>
                         <span></span>
                     </button>
-
-                    {/* Navigation Links */}
-                    <div className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
+                    <div id="blocco-link" className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
                         <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Catalogo</Link>
                         <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Accessori</Link>
                         <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
@@ -80,9 +80,6 @@ function NavigationBar() {
                         <Link to={"/contacts"} className="link-header nav-links" onClick={closeMenu}>Contatti</Link>
                         <ThemeToggle />
                     </div>
-
-                    {/* Overlay */}
-                    {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
                 </div>
             </nav>
         </>

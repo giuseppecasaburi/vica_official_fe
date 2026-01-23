@@ -16,16 +16,7 @@ function FormContact() {
                             <p>333 22 55 666</p>
                         </div>
                     </div>
-                    <div className="ballon-row">
-                        <div className="ballon">
-                            <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
-                        </div>
-                        <div className="ballon">
-                            <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
-                        </div>
-                    </div>
+                    
 
                     {/* Mobile layout - slider unico */}
                     <div className="ballon-slider">
@@ -37,14 +28,7 @@ function FormContact() {
                             <p>Numero Aziendale</p>
                             <p>333 22 55 666</p>
                         </div>
-                        <div className="ballon">
-                            <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
-                        </div>
-                        <div className="ballon">
-                            <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <div id="form-contact">

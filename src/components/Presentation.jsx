@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import { Link } from "react-router-dom";
 
 function Presentation() {
     const items = [
@@ -85,7 +86,7 @@ function Presentation() {
                     <div id="company-banner-content">
                         <h2>Affidati a dei professionisti</h2>
                         <p>Contattaci per una consulenza gratuita</p>
-                        <a className="button-link">Contattaci</a>
+                        <Link to={"/contacts"} className="button-link">Contattaci</Link>
                     </div>
                 </div>
             </section>

@@ -7,14 +7,12 @@ const ScrollToTopButton = () => {
 
     useEffect(() => {
         const toggleVisibility = () => {
-            const projectsSection = document.getElementById('box-area');
-            if (projectsSection) {
-                const rect = projectsSection.getBoundingClientRect();
-                setIsVisibile(rect.top <= window.innerHeight / 2);
-            }
+            setIsVisibile(window.scrollY > 300);
         };
 
         window.addEventListener('scroll', toggleVisibility);
+        
+        return () => window.removeEventListener('scroll', toggleVisibility);
     }, []);
 
     const scrollToTop = () => {
