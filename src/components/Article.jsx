@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Article() {
+function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini }) {
     const images = [
         './hero4.jpg',
         './hero2.jpg',
@@ -29,56 +29,22 @@ function Article() {
                 <div id="container-article">
                     <div id="description-article">
                         <div id="text-article">
-                            <h2>Boston 99</h2>
+                            <h2>{titolo}</h2>
                             <div className="retta"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ea veritatis minus! Consequatur delectus minima alias possimus tempora amet assumenda at quaerat fugiat ratione est, necessitatibus labore vel modi rem. fugiat ratione est, necessitatibus labore vel modi rem.</p>
+                            <p>{descrizione}</p>
                         </div>
                         <div id="color-article">
                             <h4>Colori Disponibili</h4>
                             <div className="retta"></div>
                             <div className="colors-grid">
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
+                                {colori.map((colore, index) => (
+                                    <div className="colore" key={index}>
+                                        <div className="cerchio">
+                                            <img src={colore.link_img} alt={colore.img_alt_it} />
+                                        </div>
+                                        <p>{colore.nome_colore_it}</p>
                                     </div>
-                                    <p>Bianco Antico</p>
-                                </div>
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
-                                    </div>
-                                    <p>Bianco Antico</p>
-                                </div>
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
-                                    </div>
-                                    <p>Bianco Antico</p>
-                                </div>
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
-                                    </div>
-                                    <p>Bianco Antico</p>
-                                </div>
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
-                                    </div>
-                                    <p>Bianco Antico</p>
-                                </div>
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
-                                    </div>
-                                    <p>Bianco Antico</p>
-                                </div>
-                                <div className="colore">
-                                    <div className="cerchio">
-                                        <img src="./azzurro_rodi.jpg" alt="" />
-                                    </div>
-                                    <p>Bianco Antico</p>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -87,13 +53,13 @@ function Article() {
                             <img src={mainImage} alt="Immagine principale" />
                         </div>
                         <div className="secondary-image">
-                            {images.map((img, index) => (
+                            {immagini.map((img, index) => (
                                 <div
                                     key={index}
                                     className={`thumbnail ${mainImage === img ? 'active' : ''}`}
                                     onClick={() => setMainImage(img)}
                                 >
-                                    <img src={img} alt={`Anteprima ${index + 1}`} />
+                                    <img src={img.immagine_link} alt={`Anteprima ${index + 1}`} />
                                 </div>
                             ))}
                         </div>

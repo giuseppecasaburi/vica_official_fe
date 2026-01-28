@@ -120,6 +120,15 @@ img {
     display: none;
 }
 
+.dark-light-btn {
+    background: unset;
+    border: unset;
+}
+
+.colore-link {
+    color: var(--color-nero-scritte);
+}
+
 @media screen and (max-width: 1150px) {
     #blocco-logo {
         width: 40%;
@@ -144,6 +153,14 @@ img {
     #blocco-genitore {
         justify-content: space-around;
         margin: unset;
+    }
+
+    .colore-link {
+        color: unset;
+    }
+
+    .dark-light-btn {
+        color: #ffffff;
     }
 
     .hamburger {

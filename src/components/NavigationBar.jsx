@@ -59,7 +59,7 @@ function NavigationBar() {
             <nav className={`nav-overlay ${isNavHidden ? 'hidden' : ''}`}>
                 <div id="blocco-genitore">
                     <div id="blocco-logo">
-                        <img src="./Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
+                        <img src="/Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
 
                     </div>
                     {/* Hamburger Button */}
@@ -73,11 +73,11 @@ function NavigationBar() {
                         <span></span>
                     </button>
                     <div id="blocco-link" className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
-                        <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Catalogo</Link>
-                        <Link to={"/"} className="link-header nav-links" onClick={closeMenu}>Accessori</Link>
-                        <Link to={"/catalogues"} className="link-header nav-links" onClick={closeMenu}>Download</Link>
-                        <Link to={"/company"} className="link-header nav-links" onClick={closeMenu}>Azienda</Link>
-                        <Link to={"/contacts"} className="link-header nav-links" onClick={closeMenu}>Contatti</Link>
+                        <Link to={"/catalogues"} className="link-header nav-links colore-link" onClick={closeMenu}>Catalogo</Link>
+                        <Link to={"/"} className="link-header nav-links colore-link" onClick={closeMenu}>Accessori</Link>
+                        <Link to={"/catalogues"} className="link-header nav-links colore-link" onClick={closeMenu}>Download</Link>
+                        <Link to={"/company"} className="link-header nav-links colore-link" onClick={closeMenu}>Azienda</Link>
+                        <Link to={"/contacts"} className="link-header nav-links colore-link" onClick={closeMenu}>Contatti</Link>
                         <ThemeToggle />
                     </div>
                 </div>

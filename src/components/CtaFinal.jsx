@@ -7,7 +7,7 @@ function CtaFinal() {
             <section id="cta-final">
                 <div id="logo-area">
                     {/* <div className="container-img">
-                        <img src="./Documento224.png" alt="" id="logo-official" />
+                        <img src="/Documento224.png" alt="" id="logo-official" />
                     </div> */}
                     <TextTyping />
                 </div>

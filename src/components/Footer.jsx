@@ -9,7 +9,7 @@ function Footer() {
                 <div id="footer-container">
                     <div id="anchor-img">
                         <div id="anchor">
-                            <img src="./Documento224.png" alt="" id="logo-official" />
+                            <img src="/Documento224.png" alt="" id="logo-official" />
                         </div>
                         <div id="anchor-link">
                             <Link to={"/catalogues"} className="link-header">Catalogo</Link>

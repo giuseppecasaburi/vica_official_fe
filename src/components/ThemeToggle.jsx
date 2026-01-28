@@ -9,8 +9,7 @@ export default function ThemeToggle() {
         <button
             onClick={toggleTheme}
             aria-label="Cambia tema"
-            className="p-2 rounded-md"
-            style={{ background: "none", border: "none", color: "white" }}
+            className="p-2 rounded-md dark-light-btn colore-link"
         >
             {theme === "dark" ? (<FontAwesomeIcon icon={faMoon} />) : (<FontAwesomeIcon icon={faSun} />)}
         </button>

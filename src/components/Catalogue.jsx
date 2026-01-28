@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Catalogue({ layout }) {
+function Catalogue({ id, index, layout, titolo, anteprima, anteprima_en, img, img_alt_it, img_alt_en }) {
     let isOdd = layout === "odd" ? "order-1" : "";
     return (
         <>
@@ -8,25 +8,25 @@ function Catalogue({ layout }) {
                 <div id="container-catalogue">
                     <div className="catalogue">
                         <div className={`image-catalogue ${isOdd}`}>
-                            <img src="./anteprima_catalogo.jpg" alt="" />
+                            <img src={img} alt="img_alt_it" />
                         </div>
                         <div className="text-catalogue">
-                            <h2>Catalogo Cannettato</h2>
+                            <h2>{titolo}</h2>
                             <div className="retta"></div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolorem nam in? Eaque accusamus maxime laborum ex! Rem corporis, architecto perspiciatis repellendus deserunt ea sit saepe commodi voluptatibus, molestias accusantium.</p>
-                            <Link to={"/catalogue"} className="button-link">Scopri di più</Link>
+                            <p>{anteprima}</p>
+                            <Link to={`/catalogue/${id}` } className="button-link">Scopri di più</Link>
                         </div>
                     </div>
                 </div>
                 <div id="container-catalogue-responsive">
                     <div className="catalogue">
                         <div className="text-catalogue">
-                            <h2>Catalogo Cannettato</h2>
+                            <h2>{titolo}</h2>
                             <div className={`image-catalogue ${isOdd}`}>
                                 <img src="./anteprima_catalogo.jpg" alt="" />
                             </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolorem nam in? Eaque accusamus maxime laborum ex! Rem corporis, architecto perspiciatis repellendus deserunt ea sit saepe commodi voluptatibus, molestias accusantium.</p>
-                            <Link to={"/catalogue"} className="button-link">Scopri di più</Link>
+                            <p>{anteprima}</p>
+                            <Link to={`/catalogue/${id}` } className="button-link">Scopri di più</Link>
                         </div>
                     </div>
                 </div>

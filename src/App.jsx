@@ -20,8 +20,8 @@ function App() {
           <Route element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path='/catalogues' element={<CataloguesPage />} />
-            <Route path='/catalogue' element={<CataloguePage />} />
-            <Route path='/product' element={<ProductPage />} />
+            <Route path='/catalogue/:id' element={<CataloguePage />} />
+            <Route path='/product/:id' element={<ProductPage />} />
             <Route path='/company' element={<CompanyPage />} />
             <Route path='/contacts' element={<ContactPage />} />
           </Route>

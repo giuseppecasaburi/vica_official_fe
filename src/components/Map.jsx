@@ -18,7 +18,7 @@ function MapComponent() {
                     <Popup>
                         <div className="popup-content">
                             <img
-                                src={"./Documento224.png"}
+                                src={"/Documento224.png"}
                                 alt="Nome Azienda"
                                 className="popup-logo"
                             />

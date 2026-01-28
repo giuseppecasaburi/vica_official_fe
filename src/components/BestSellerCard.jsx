@@ -1,9 +1,9 @@
-function BestSellerCard() {
+function BestSellerCard({titolo, img, img_alt_it, img_alt_en, art_id}) {
     return (
         <>
             <div className="bs-card">
-                <h4>Dallas 90</h4>
-                <img src="./anteprima_dettaglio.jpg" alt="" />
+                <h4>{titolo}</h4>
+                <img src={img} alt={img_alt_it} />
             </div>
         </>
     )
