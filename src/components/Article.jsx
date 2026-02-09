@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
 
 function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini }) {
-    const images = [
-        './hero4.jpg',
-        './hero2.jpg',
-        './hero1.jpg',
-        './hero3.jpg'
-    ];
 
-    const [mainImage, setMainImage] = useState(images[0]);
+    const [mainImage, setMainImage] = useState(immagini[0].immagine_link);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
@@ -56,8 +50,8 @@ function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini
                             {immagini.map((img, index) => (
                                 <div
                                     key={index}
-                                    className={`thumbnail ${mainImage === img ? 'active' : ''}`}
-                                    onClick={() => setMainImage(img)}
+                                    className={`thumbnail ${mainImage === img.immagine_link ? 'active' : ''}`}
+                                    onClick={() => setMainImage(img.immagine_link)}
                                 >
                                     <img src={img.immagine_link} alt={`Anteprima ${index + 1}`} />
                                 </div>

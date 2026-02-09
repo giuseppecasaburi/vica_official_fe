@@ -13,14 +13,14 @@ function Presentation() {
             <section id="company-presentation">
                 <div id="container-presentation">
                     <div id="image-presentation">
-                        <img src="./family.jpg" alt="" />
+                        <img src="./family.jpg" alt="" style={{width: "100%", height: "100%"}}/>
                     </div>
                     <div id="content-text-area">
                         <div id="titolo">
                             <h2>Le Nostre Radici</h2>
                         </div>
                         <div id="image-presentation-responsive">
-                            <img src="./family.jpg" alt="" />
+                            <img src="./family.jpg" alt=""/>
                         </div>
                         <div id="testo">
                             <div className="retta"></div>
