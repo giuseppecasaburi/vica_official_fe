@@ -30,16 +30,21 @@ function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini
                         <div id="color-article">
                             <h4>Colori Disponibili</h4>
                             <div className="retta"></div>
-                            <div className="colors-grid">
-                                {colori.map((colore, index) => (
-                                    <div className="colore" key={index}>
-                                        <div className="cerchio">
-                                            <img src={colore.link_img} alt={colore.img_alt_it} />
-                                        </div>
-                                        <p>{colore.nome_colore_it}</p>
+                            {Object.entries(colori).map(([tipologia, colori]) => (
+                                <>
+                                    <h4>{tipologia}</h4>
+                                    <div className="colors-grid">
+                                    {colori.map((colore, index) => (
+                                            <div className="colore" key={index}>
+                                                <div className="cerchio">
+                                                    <img src={colore.link_img} alt={colore.img_alt_it} />
+                                                </div>
+                                                <p>{colore.nome_colore_it}</p>
+                                            </div>
+                                    ))}
                                     </div>
-                                ))}
-                            </div>
+                                </>
+                            ))}
                         </div>
                     </div>
                     <div id="image-article">
