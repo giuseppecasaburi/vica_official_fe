@@ -6,7 +6,6 @@ import Loader from "../components/Loader";
 import { useEffect, useState } from "react";
 
 const cataloguesUrl = import.meta.env.VITE_URL_CATALOGHI;
-console.log(cataloguesUrl);
 
 function CataloguesPage() {
     const [catalogues, setCatalogues] = useState([]);
