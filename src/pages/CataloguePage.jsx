@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 import BestSeller from "../components/BestSeller";
 import Description from "../components/Description";
-import Download from "../components/Download";
 import Header from "../components/Header";
+import CollectionsList from "../components/CollectionsList";
 import ProductsList from "../components/ProductsList";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -30,7 +30,7 @@ function CataloguePage() {
                 setLoading(false);
             }
         };
-        
+
         getCatalogue();
     }, [id]);
 
@@ -47,8 +47,11 @@ function CataloguePage() {
                     <>
                         <BestSeller BestSeller={catalogue.articoli_preferiti} />
                         <Description titolo={catalogue.nome_catalogo} descrizione_it={catalogue.descrizione_catalogo_it} descrizione_en={catalogue.descrizione_catalogo_en} />
-                        <ProductsList articoli={catalogue.articoli_collegati} />
-                        {/* <Download cataloghi={catalogues.cataloghi} /> */}
+                        {catalogue.has_collections === 1 ? (
+                            <CollectionsList collezioni={catalogue.collezioni} />
+                        ) : (
+                            <ProductsList articoli={catalogue.articoli_collegati} />
+                        )}
                     </>
                 )}
             </main>

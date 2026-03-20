@@ -4,9 +4,16 @@ function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini
 
     const [mainImage, setMainImage] = useState(immagini[0].immagine_link);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isColorModalOpen, setIsColorModalOpen] = useState(false);
+
+    const laccati = colori.laccati || [];
+    const MAX_VISIBLE = 10;
+    const hasTooMany = laccati.length >= MAX_VISIBLE;
+    const visibili = hasTooMany ? laccati.slice(0, MAX_VISIBLE - 1) : laccati;
+    const nascosti = hasTooMany ? laccati.slice(MAX_VISIBLE - 1) : [];
 
     useEffect(() => {
-        if (isModalOpen) {
+        if (isModalOpen || isColorModalOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'unset';
@@ -15,7 +22,7 @@ function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini
         return () => {
             document.body.style.overflow = 'unset';
         };
-    }, [isModalOpen]);
+    }, [isModalOpen, isColorModalOpen]);
 
     return (
         <>
@@ -30,23 +37,28 @@ function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini
                         <div id="color-article">
                             <h4>Colori Disponibili</h4>
                             <div className="retta"></div>
-                            {Object.entries(colori).map(([tipologia, colori]) => (
-                                <>
-                                    <h4>{tipologia}</h4>
-                                    <div className="colors-grid">
-                                    {colori.map((colore, index) => (
-                                            <div className="colore" key={index}>
-                                                <div className="cerchio">
-                                                    <img src={colore.link_img} alt={colore.img_alt_it} />
-                                                </div>
-                                                <p>{colore.nome_colore_it}</p>
-                                            </div>
-                                    ))}
+                            <div className="colors-grid">
+                                {visibili.map((colore, index) => (
+                                    <div className="colore" key={index}>
+                                        <div className="cerchio">
+                                            <img src={colore.link_img} alt={colore.img_alt_it} />
+                                        </div>
+                                        <p>{colore.nome_colore_it}</p>
                                     </div>
-                                </>
-                            ))}
+                                ))}
+
+                                {nascosti.length > 0 && (
+                                    <div className="colore" onClick={() => setIsColorModalOpen(true)}>
+                                        <div className="cerchio cerchio-more">
+                                            <span>+</span>
+                                        </div>
+                                        <p>Altri colori</p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
+
                     <div id="image-article">
                         <div className="main-image" onClick={() => setIsModalOpen(true)}>
                             <img src={mainImage} alt="Immagine principale" />
@@ -74,10 +86,37 @@ function Article({ titolo, anteprima, id_catalogo, descrizione, colori, immagini
                             </div>
                         </div>
                     )}
+
+                    {isColorModalOpen && (
+                        <div className="modal color-modal" onClick={() => setIsColorModalOpen(false)}>
+                            <div className="color-modal-content" onClick={(e) => e.stopPropagation()}>
+                                <button className="color-modal-close" onClick={() => setIsColorModalOpen(false)}>
+                                    &times;
+                                </button>
+                                <h3>Colori Disponibili</h3>
+                                <div className="retta"></div>
+                                {Object.entries(colori).map(([tipologia, lista]) => (
+                                    <div className="color-section" key={tipologia}>
+                                        <h4>{tipologia.replace(/_/g, ' ')}</h4>
+                                        <div className="colors-grid">
+                                            {lista.map((colore, index) => (
+                                                <div className="colore" key={index}>
+                                                    <div className="cerchio">
+                                                        <img src={colore.link_img} alt={colore.img_alt_it} />
+                                                    </div>
+                                                    <p>{colore.nome_colore_it}</p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 export default Article;

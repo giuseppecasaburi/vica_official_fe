@@ -6,6 +6,7 @@ import ArticoliCorrelati from "../components/ArticoliCorrelati";
 import InfoProduct from "../components/InfoProduct";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loader from "../components/Loader";
 
 const productUrl = import.meta.env.VITE_URL_PRODUCT;
 
@@ -35,7 +36,12 @@ function ProductPage() {
 
     }, [id]);
 
-    if (loading) return <p>Caricamento...</p>;
+    if (loading) return (
+        <>
+            <Header />
+            <Loader />
+        </>
+    );
     if (error) return <p>{error}</p>;
     if (!product || !product.articolo) return <p>Prodotto non trovato</p>;
 
@@ -51,7 +57,7 @@ function ProductPage() {
                 <Header />
 
                 <Article titolo={articolo.nome_articolo} anteprima={articolo.articolo_anteprima_it} colori={product.colori_articolo} descrizione={articolo.articolo_descrizione_it} id_catalogo={articolo.articolo_catalogo_id} immagini={product.immagini_articolo} />
-                <InfoProduct />
+                <InfoProduct varianti={articolo.varianti_articolo}/>
                 {/* PASSARE I CORRELATI ACCESSORII*/}
                 <AccessoriCorrelati titolo={articolo.nome_articolo} correlati={correlati_articolo}/>
                 <ArticoliCorrelati correlati={correlati_articolo} />

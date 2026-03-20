@@ -9,7 +9,7 @@ export function ThemeProvider({ children }) {
             const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
             const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
 
-            if (prefersDark) return "dark";
+            if (prefersDark) return "light";
             if (prefersLight) return "light";
         }
 
