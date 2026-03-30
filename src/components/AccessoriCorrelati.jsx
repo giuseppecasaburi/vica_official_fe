@@ -10,10 +10,10 @@ function AccessoriCorrelati({ titolo, correlati }) {
                 <p>Decora il tuo spazio con gli accessori perfetti da abbinare a {titolo}</p>
                 <div className="product-bs">
                     {correlati.map((correlato, index) => (
-                        <BestSellerCard key={index} titolo={correlato.nome_articolo} img={correlato.img_link} img_alt_it={correlato.img_alt_it} img_alt_en={correlato.img_alt_it} art_id={correlato.articolo_id}/>
+                        <BestSellerCard key={index} titolo={correlato.nome_articolo} img={correlato.img_link} img_alt_it={correlato.img_alt_it} img_alt_en={correlato.img_alt_it} art_id={correlato.articolo_id} Accessorio={"true"}/>
                     ))}
                 </div>
-                <Link className="button-link">Scopri di più</Link>
+                <Link to={"/accessories/4"} className="button-link">Scopri di più</Link>
             </section>
         </>
     )

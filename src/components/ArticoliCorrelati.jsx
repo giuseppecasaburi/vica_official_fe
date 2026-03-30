@@ -13,7 +13,7 @@ function ArticoliCorrelati({ correlati }) {
                         <ProductCard img={articolo.img_link} img_alt_en={articolo.img_alt_en} img_alt_it={articolo.img_alt_en} tipo={""} titolo={articolo.nome_articolo} key={index} art_id={articolo.articolo_id}/>
                     ))}
                 </div>
-                <Link className="button-link">Scopri di più</Link>
+                <Link to={"/catalogues"} className="button-link">Scopri di più</Link>
             </section>
         </>
     )
