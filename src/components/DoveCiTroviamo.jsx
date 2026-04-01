@@ -16,7 +16,7 @@ function DoveCiTroviamo() {
                         <div className="content-right">
                             <h2 className="desktop-dct">Vieni a trovarci<br />nel nostro showroom</h2>
                             <div className="retta desktop-dct"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo doloribus quae labore cupiditate temporibus, quibusdam vitae tenetur hic aliquam placeat voluptatem eos id aspernatur quis iusto sequi reiciendis molestias?</p>
+                            <p>Siamo presenti sul territorio per offrirti un'assistenza diretta e personalizzata. Vieni a trovarci nella nostra sede oppure contattaci: il nostro team è a tua disposizione per ascoltare ogni esigenza e guidarti verso la soluzione più adatta.</p>
                             <Link to={"#area-form"} className="button-form">Contattaci</Link>
                         </div>
                     </div>

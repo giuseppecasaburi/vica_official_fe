@@ -1,8 +1,13 @@
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 
 function Download({ cataloghi }) {
+    const cataloghi_download = {
+        "Catalogo Essential": "/essential/catalogo_essential.pdf",
+        "Catalogo Cannettato": "/cannettato/catalogo_cannettato.pdf",
+        "Catalogo Wood": "/wood/catalogo_wood.pdf",
+    }
+
     return (
         <>
             <section id="download-area">
@@ -20,7 +25,9 @@ function Download({ cataloghi }) {
                                 <h3>{catalogo.nome_catalogo}</h3>
                                 <div className="retta"></div>
                                 <p>{catalogo.anteprima_catalogo_it}</p>
-                                <Link to={"/"} className="button-link"><FontAwesomeIcon icon={faDownload} /> Scarica</Link>
+                                <a href={cataloghi_download[catalogo.nome_catalogo]} download className="button-link">
+                                    <FontAwesomeIcon icon={faDownload} /> Scarica
+                                </a>
                             </div>
                         </div>
                     ))}

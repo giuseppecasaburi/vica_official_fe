@@ -8,8 +8,8 @@ function ContactPage() {
         <>
             <main id="contatti">
                 <Header />
-                <FormContact/>
                 <Faq/>
+                <FormContact/>
                 <DoveCiTroviamo/>
             </main>
         </>

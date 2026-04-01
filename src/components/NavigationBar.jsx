@@ -1,6 +1,7 @@
 // NavigationBar.jsx
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 import ThemeToggle from "./ThemeToggle";
 
 function NavigationBar() {
@@ -59,8 +60,9 @@ function NavigationBar() {
             <nav className={`nav-overlay ${isNavHidden ? 'hidden' : ''}`}>
                 <div id="blocco-genitore">
                     <div id="blocco-logo">
-                        <img src="/Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
-
+                        <Link to={"/"}>
+                            <img src="/Documento224.png" alt="" style={{ mixBlendMode: "color-burn" }} />
+                        </Link>
                     </div>
                     {/* Hamburger Button */}
                     <button
@@ -74,8 +76,8 @@ function NavigationBar() {
                     </button>
                     <div id="blocco-link" className={`link-nav ${isMenuOpen ? 'open' : ''}`}>
                         <Link to={"/catalogues"} className="link-header nav-links colore-link" onClick={closeMenu}>Catalogo</Link>
-                        <Link to={"/"} className="link-header nav-links colore-link" onClick={closeMenu}>Accessori</Link>
-                        <Link to={"/catalogues"} className="link-header nav-links colore-link" onClick={closeMenu}>Download</Link>
+                        <Link to={"/accessories/4"} className="link-header nav-links colore-link" onClick={closeMenu}>Accessori</Link>
+                        <HashLink to="/catalogues#download-area" className="link-header nav-links colore-link">Download</HashLink>
                         <Link to={"/company"} className="link-header nav-links colore-link" onClick={closeMenu}>Azienda</Link>
                         <Link to={"/contacts"} className="link-header nav-links colore-link" onClick={closeMenu}>Contatti</Link>
                         <ThemeToggle />
