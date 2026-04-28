@@ -5,7 +5,7 @@ function MapComponent() {
     return (
         <div className="map-wrapper">
             <MapContainer
-                center={[40.9436488, 14.2185095]}
+                center={[40.943926172880325, 14.218852315344993]}
                 zoom={15}
                 className="map-container"
                 scrollWheelZoom={false}  // più elegante per i siti vetrina
@@ -14,7 +14,7 @@ function MapComponent() {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                <Marker position={[40.9436488, 14.2185095]}>
+                <Marker position={[40.943926172880325, 14.218852315344993]}>
                     <Popup>
                         <div className="popup-content">
                             <img
@@ -23,7 +23,7 @@ function MapComponent() {
                                 className="popup-logo"
                             />
                             <div>
-                                Strada Statale Appia 7/bis Km 18,600
+                                Via Apollo, 5
                                 <br />
                                 <b>80029 Sant'Antimo (NA)</b>
                             </div>

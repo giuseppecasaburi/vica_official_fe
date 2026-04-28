@@ -47,6 +47,8 @@ function ProductPage() {
 
     const articolo = product.articolo;
     const correlati_articolo = product.correlati_articolo;
+    const correlati_accessorio = product.correlati_accessori;
+    const scheda_tecnica = product.scheda_tecnica;
 
     console.log(product);
     
@@ -57,9 +59,9 @@ function ProductPage() {
                 <Header />
 
                 <Article titolo={articolo.nome_articolo} anteprima={articolo.articolo_anteprima_it} colori={product.colori_articolo} descrizione={articolo.articolo_descrizione_it} id_catalogo={articolo.articolo_catalogo_id} immagini={product.immagini_articolo} />
-                <InfoProduct varianti={articolo.varianti_articolo}/>
+                <InfoProduct varianti={articolo.varianti_articolo} scheda_tecnica={scheda_tecnica}/>
                 {/* PASSARE I CORRELATI ACCESSORII*/}
-                <AccessoriCorrelati titolo={articolo.nome_articolo} correlati={correlati_articolo}/>
+                <AccessoriCorrelati titolo={articolo.nome_articolo} correlati={correlati_accessorio}/>
                 <ArticoliCorrelati correlati={correlati_articolo} />
             </main>
         </>

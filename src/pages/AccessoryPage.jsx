@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Article from "../components/Article";
 import AccessoriCorrelati from "../components/AccessoriCorrelati";
 import ArticoliCorrelati from "../components/ArticoliCorrelati";
-import InfoProduct from "../components/InfoProduct";
+// import InfoProduct from "../components/InfoProduct";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../components/Loader";

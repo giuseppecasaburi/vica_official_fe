@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .env
+public/accessori
+public/cannettato
+public/essential
+public/wood

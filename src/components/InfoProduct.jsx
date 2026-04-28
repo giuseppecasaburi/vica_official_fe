@@ -1,4 +1,4 @@
-function InfoProduct({ varianti, accessorio = "" }) {
+function InfoProduct({ varianti, scheda_tecnica, accessorio = "" }) {
     return (
         <>
             <section id="info-product">
@@ -20,7 +20,7 @@ function InfoProduct({ varianti, accessorio = "" }) {
                         <div className="retta"></div>
                         <div className="info-area">
                             <div id="image-block">
-                                <img src="/Dallas90_misure.jpg" alt="" />
+                                <img src={scheda_tecnica.immagine_link} alt="" />
                             </div>
                             <div id="text-block">
                                 {varianti.map((variante, index) => (

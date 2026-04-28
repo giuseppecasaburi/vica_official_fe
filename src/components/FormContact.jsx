@@ -60,11 +60,11 @@ function FormContact() {
                     <div className="ballon-row">
                         <div className="ballon">
                             <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
+                            <p>081 505 9054</p>
                         </div>
                         <div className="ballon">
                             <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
+                            <p>081 505 9054</p>
                         </div>
                     </div>
 
@@ -73,11 +73,11 @@ function FormContact() {
                     <div className="ballon-slider">
                         <div className="ballon">
                             <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
+                            <p>081 505 9054</p>
                         </div>
                         <div className="ballon">
                             <p>Numero Aziendale</p>
-                            <p>333 22 55 666</p>
+                            <p>081 505 9054</p>
                         </div>
 
                     </div>
